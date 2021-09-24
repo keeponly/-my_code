@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test-platform</title>
+    <link rel="stylesheet" href="../folder/reset.css" type="text/css">
+    <link rel="stylesheet" href="../folder/index.css" type="text/css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+   /*     定义加载完页面在加载js  js函数 function(){}*/
+/*
+        $(document).ready(function(){
+    $(".add_pro").folder({background:"aliceblue"})
+});
+*/
+/*弹框js*/
+    $(function () {
+        $("#add").click(function () {
+            $(".back").addClass("show")
+        });
+        $("#pro_qx").click(function () {
+            $(".back").removeClass("show")});
+         $("#pro_tj").click(function () {
+            $(".back").removeClass("show");
+        });
+         $(".left_menu_list h3").click(function () {
+             $(this).next().toggleClass('show')
+             .parent().siblings().children('ul').removeClass('show')
+         })
+    })
+    </script>
+</head>
+<body>
+<!--顶部菜单栏-->
+<div class="top_menu">
+    <!--标题-->
+    <div class="title" >自动化测试平台</div>
+    <!--首页-->
+    <div class="menu_list">
+        <ul>
+            <a href=""><li>首页</li></a>
+            <a href=""><li>接口列表</li></a>
+            <a href=""><li>用例列表</li></a>
+            <a href=""><li>套件列表</li></a>
+            <a href=""><li>测试报告</li></a>
+        </ul>
+    </div>
+    <div class="top_user">
+        <a href="">退出登录</a>
+    </div>
+</div>
+<!--*侧边栏*-->
+<div class="left_menu" ><!--定义左边菜单总长度，宽度-->
+    <div class="left_title">项目管理</div>
+        <div class="left_menu_list">
+            <ul>
+                <li>
+                    <h3 style="margin-top: 20px">环境管理</h3>
+                    <ul class="hide">
+                <li><a href="" >添加接口</a></li>
+                <li><a href="" >添加接口</a></li>
+            </ul>
+                </li>
+                <li>
+                    <h3 style="margin-top: 20px" >环境管理</h3>
+                    <ul class="hide">
+                <li><a href="" >添加接口</a></li>
+                <li><a href="" >添加接口</a></li>
+            </ul>
+                </li>
+                <li>
+                    <h3 style="margin-top: 20px" >环境管理</h3>
+                    <ul class="hide">
+                <li><a href="" >添加接口</a></li>
+                <li><a href="" >添加接口</a></li>
+            </ul>
+                </li>
+                <li>
+                    <h3 style="margin-top: 20px" >环境管理</h3>
+                    <ul class="hide">
+                <li><a href="" >添加接口</a></li>
+                <li><a href="" >添加接口</a></li>
+            </ul>
+                </li>
+                <li>
+                    <h3 style="margin-top: 20px" >环境管理</h3>
+                    <ul class="hide">
+                <li><a href="" >添加接口</a></li>
+                <li><a href="" >添加接口</a></li>
+            </ul>
+                </li>
+
+    </ul>
+</div>
+</div>
+
+<!--内容部分-->
+<div class="main_content">
+    <div class="pro_info">
+        <div class="pro_title"> 项 目 A </div>
+        <p>用例数量</p>
+        <p>接口数量</p>
+        <div style="text-align: center">
+            <a href="">删除项目</a></div>
+    </div>
+    <div class="pro_info">
+        <div class="pro_title"> 项 目 A </div>
+        <p>用例数量</p>
+        <p>接口数量</p>
+        <div style="text-align: center">
+            <a href="">删除项目</a></div>
+    </div>
+    <div class="pro_info">
+        <div class="pro_title"> 项 目 A </div>
+        <p>用例数量</p>
+        <p>接口数量</p>
+        <div style="text-align: center">
+            <a href="">删除项目</a></div>
+    </div>
+    <div class="pro_info">
+        <div class="pro_title"> 项 目 A </div>
+        <p>用例数量</p>
+        <p>接口数量</p>
+        <div style="text-align: center">
+            <a href="">删除项目</a></div>
+    </div>
+    <div class="pro_info" id="add">
+        <div style="text-align: center;margin-top: 80px">
+            <button  >添加项目</button></div>
+    </div>
+
+</div>
+<!--增加项目窗口-->
+<div class="back hide">
+    <div class="add_pro "  >
+        <div class="alert_title"> 新增项目</div>
+        <form action="" >
+            <div class="alert_input">
+                <label for="pro_name">项目名称：</label>
+                <input type="text"  id="pro_name">
+            </div>
+            <div class="alert_input">
+                <label for="pro_address">测试地址：</label>
+                <input type="text" id="pro_address">
+            </div>
+            <div class="alert_input">
+                <label for="pro_personnel">测试人员：</label>
+                <input type="text"  id="pro_personnel">
+            </div>
+            <div class="pro_desc">
+                <label for="describe">项目描述：</label>
+                <textarea cols="25" rows="5"  id="describe" style="margin-left:18px"></textarea>
+            </div>
+            <div class="pro_tj">
+                <input type="submit" value="提交" style="font-size:25px; background: aliceblue;" id="pro_tj">
+                <input type="button" value="取消" style="font-size:25px;margin-left:50px ;background: aliceblue; " id="pro_qx" >
+
+            </div>
+        </form>
+    </div>
+</div>
+</body>

@@ -1,0 +1,894 @@
+﻿[2019-06-10 13:37:42,183]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-06-10 13:37:42,187]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15313929271','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-06-10 13:37:42,211]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第2条测试用例：加标
+[2019-06-10 13:37:42,217]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Method': 'post', 'Params': "{'memberId':'3041','title':'攒够100万房子首付','amount':'100000','loanRate':'18.0','loanTerm':'6','loanDateType':'4','repaymemtWay':'10','biddingDays':'9'}", 'sql': "{'sql': 'select MAX(Id) from loan where MemberID =3041'}", 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"加标成功"}'}
+[2019-06-10 13:37:42,225]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试audit_loan模块里的第3条测试用例：审核
+[2019-06-10 13:37:42,230]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'audit_loan', 'Title': '审核', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Method': 'post', 'Params': "{'id':'loanid','status':'4'}", 'sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"竞标开始，当前标为竞标中状态"}'}
+[2019-06-10 13:39:11,993]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-06-10 13:39:12,012]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-06-10 13:39:12,473]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:39:12,478]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-06-10 13:39:12,486]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'Login', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-06-10 13:39:12,835]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:39:12,841]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-06-10 13:39:12,846]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'Login', 'Title': '不输入密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-06-10 13:39:13,233]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:39:13,240]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-06-10 13:39:13,244]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Module': 'Login', 'Title': '输入错误的手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-06-10 13:39:13,641]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:39:13,647]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-06-10 13:39:13,653]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'Module': 'Login', 'Title': '输入错误的密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-06-10 13:39:14,024]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:41:12,495]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-06-10 13:41:12,499]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-06-10 13:41:12,816]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:41:12,821]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-06-10 13:41:12,826]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'Login', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-06-10 13:41:13,113]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:41:13,118]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-06-10 13:41:13,124]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'Login', 'Title': '不输入密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-06-10 13:41:13,652]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:41:13,657]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-06-10 13:41:13,661]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Module': 'Login', 'Title': '输入错误的手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-06-10 13:41:13,969]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:41:13,974]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-06-10 13:41:13,979]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'Module': 'Login', 'Title': '输入错误的密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-06-10 13:41:14,302]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:42:02,420]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-06-10 13:42:02,445]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15313929271','pwd':'123456'}", 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-06-10 13:42:02,793]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 13:42:03,064]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试register模块里的第2条测试用例：正常充值
+[2019-06-10 13:42:03,072]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'register', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15313929271','amount':'1000'}", 'sql': "{'sql':'SELECT  LeaveAmount FROM member WHERE MobilePhone =15313929271'}", 'ExpectedResult': "{'status':1,'code':'10001','data':{'id':2688,'regname':'小蜜蜂','pwd':'E10ADC3949BA59ABBE56E057F20F883E','mobilephone':'15313929271','leaveamount':'expect_amount','type':'1','regtime':'2019-05-22 22:16:03.0','msg':'充值成功'}}"}
+[2019-06-10 13:42:06,804]-[ERROR]-[my_log.py]-[python14]-[日志信息]:测试执行过程中出错，错误是: :: {'code': '10001',
+ 'data': {'id': 2688,
+          'leaveamount': '38000',
+          'mobilephone': '15313929271',
+          'msg': '充值成功',
+          'pwd': 'E10ADC3949BA59ABBE56E057F20F883E',
+          'regname': '小蜜蜂',
+          'regtime': '2019-05-22 22:16:03.0',
+          'type': '1'},
+ 'status': 1} != {'code': '10001',
+ 'data': {'id': 2688,
+          'leaveamount': '38000.00',
+          'mobilephone': '15313929271',
+          'pwd': 'E10ADC3949BA59ABBE56E057F20F883E',
+          'regname': '小蜜蜂',
+          'regtime': '2019-05-22 22:16:03.0',
+          'type': '1'},
+ 'msg': '充值成功',
+ 'status': 1}
+[2019-06-10 13:42:07,062]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试register模块里的第3条测试用例：不输入充值金额
+[2019-06-10 13:42:07,071]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'register', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': "{'mobilephone':'15313929271','amount':''}", 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
+[2019-06-10 13:42:07,385]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 16:48:54,084]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-06-10 16:48:54,089]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-06-10 16:48:54,517]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 16:48:54,523]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-06-10 16:48:54,528]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'Login', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-06-10 16:48:54,828]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 16:48:54,835]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-06-10 16:48:54,841]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'Login', 'Title': '不输入密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-06-10 16:48:55,151]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 16:48:55,160]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-06-10 16:48:55,165]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Module': 'Login', 'Title': '输入错误的手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-06-10 16:48:55,518]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-10 16:48:55,526]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-06-10 16:48:55,531]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'Module': 'Login', 'Title': '输入错误的密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-06-10 16:48:56,570]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-12 23:15:52,445]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-06-12 23:15:52,459]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-06-12 23:15:53,035]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-12 23:15:53,044]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-06-12 23:15:53,053]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'Login', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-06-12 23:15:53,420]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-12 23:15:53,426]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-06-12 23:15:53,431]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'Login', 'Title': '不输入密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-06-12 23:15:53,956]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-12 23:15:53,966]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-06-12 23:15:53,976]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Module': 'Login', 'Title': '输入错误的手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-06-12 23:15:54,420]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-12 23:15:54,427]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-06-12 23:15:54,434]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'Module': 'Login', 'Title': '输入错误的密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-06-12 23:15:54,931]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-06-12 23:17:19,772]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-06-12 23:17:19,800]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-06-12 23:17:20,308]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-06-12 23:17:20,320]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'Login', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-06-12 23:17:20,435]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-06-12 23:17:20,445]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'Login', 'Title': '不输入密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-06-12 23:17:20,562]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-06-12 23:17:20,572]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Module': 'Login', 'Title': '输入错误的手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-06-12 23:17:20,758]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-06-12 23:17:20,770]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'Module': 'Login', 'Title': '输入错误的密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-08-08 09:47:10,233]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-08-08 09:47:10,247]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-08-08 09:47:10,497]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-08 09:47:10,498]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-08-08 09:47:10,500]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'Login', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-08-08 09:47:10,691]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-08 09:47:10,692]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-08-08 09:47:10,693]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'Login', 'Title': '不输入密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-08-08 09:47:10,864]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-08 09:47:10,866]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-08-08 09:47:10,867]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Module': 'Login', 'Title': '输入错误的手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-08-08 09:47:11,066]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-08 09:47:11,067]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-08-08 09:47:11,069]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'Module': 'Login', 'Title': '输入错误的密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-08-08 09:47:11,258]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-09 17:20:39,647]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-08-09 17:20:39,667]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-08-09 17:20:39,928]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-09 17:20:39,929]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-08-09 17:20:39,930]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'Login', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}"}
+[2019-08-09 17:20:40,105]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-09 17:20:40,107]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-08-09 17:20:40,108]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'Login', 'Title': '不输入密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}"}
+[2019-08-09 17:20:40,285]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-09 17:20:40,286]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-08-09 17:20:40,287]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Module': 'Login', 'Title': '输入错误的手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-08-09 17:20:40,497]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-09 17:20:40,498]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-08-09 17:20:40,498]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'Module': 'Login', 'Title': '输入错误的密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'sql': 'None', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}"}
+[2019-08-09 17:20:40,704]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:50:59,109]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第1条测试用例：正常注册
+[2019-08-27 09:50:59,111]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'注册成功'}", 'CaseId': 1, 'Module': 'Register', 'Title': '正常注册', 'sql': 'None', 'Params': "{'mobilephone':'15313929280','pwd':'123456'}", 'Method': 'get', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register'}
+[2019-08-27 09:50:59,543]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:50:59,545]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第2条测试用例：不输入手机号
+[2019-08-27 09:50:59,547]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}", 'CaseId': 2, 'Module': 'Register', 'Title': '不输入手机号', 'sql': 'None', 'Params': "{'mobilephone':'','pwd':'123456'}", 'Method': 'post', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register'}
+[2019-08-27 09:50:59,873]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:50:59,875]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第3条测试用例：不输入密码
+[2019-08-27 09:50:59,877]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}", 'CaseId': 3, 'Module': 'Register', 'Title': '不输入密码', 'sql': 'None', 'Params': "{'mobilephone':'18688775656','pwd':''}", 'Method': 'get', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register'}
+[2019-08-27 09:51:00,256]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:51:00,259]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第4条测试用例：输入已存在的手机号
+[2019-08-27 09:51:00,263]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}", 'CaseId': 4, 'Module': 'Register', 'Title': '输入已存在的手机号', 'sql': 'None', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'Method': 'post', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register'}
+[2019-08-27 09:51:00,612]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:51:00,614]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第5条测试用例：输入错误的手机号
+[2019-08-27 09:51:00,615]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}", 'CaseId': 5, 'Module': 'Register', 'Title': '输入错误的手机号', 'sql': 'None', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'Method': 'get', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register'}
+[2019-08-27 09:51:00,864]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:57:07,062]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第1条测试用例：正常注册
+[2019-08-27 09:57:07,064]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'注册成功'}", 'Method': 'get', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '正常注册', 'sql': 'None', 'Module': 'Register', 'Params': "{'mobilephone':'15313929281','pwd':'123456'}"}
+[2019-08-27 09:57:07,376]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:57:07,378]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第2条测试用例：不输入手机号
+[2019-08-27 09:57:07,381]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}", 'Method': 'post', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '不输入手机号', 'sql': 'None', 'Module': 'Register', 'Params': "{'mobilephone':'','pwd':'123456'}"}
+[2019-08-27 09:57:07,639]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:57:07,641]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第3条测试用例：不输入密码
+[2019-08-27 09:57:07,642]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}", 'Method': 'get', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '不输入密码', 'sql': 'None', 'Module': 'Register', 'Params': "{'mobilephone':'18688775656','pwd':''}"}
+[2019-08-27 09:57:07,894]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:57:07,896]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第4条测试用例：输入已存在的手机号
+[2019-08-27 09:57:07,897]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}", 'Method': 'post', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '输入已存在的手机号', 'sql': 'None', 'Module': 'Register', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}"}
+[2019-08-27 09:57:08,178]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 09:57:08,180]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第5条测试用例：输入错误的手机号
+[2019-08-27 09:57:08,181]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}", 'Method': 'get', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '输入错误的手机号', 'sql': 'None', 'Module': 'Register', 'Params': "{'mobilephone':'186887756569','pwd':'123456'}"}
+[2019-08-27 09:57:08,433]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 10:02:53,226]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第1条测试用例：正常注册
+[2019-08-27 10:02:53,231]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'15313929282','pwd':'123456'}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '正常注册', 'sql': 'None', 'CaseId': 1, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'注册成功'}", 'Method': 'get', 'Module': 'Register'}
+[2019-08-27 10:02:53,637]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 10:02:53,639]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第2条测试用例：不输入手机号
+[2019-08-27 10:02:53,641]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'','pwd':'123456'}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '不输入手机号', 'sql': 'None', 'CaseId': 2, 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}", 'Method': 'post', 'Module': 'Register'}
+[2019-08-27 10:02:53,942]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 10:02:53,944]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第3条测试用例：不输入密码
+[2019-08-27 10:02:53,946]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'18688775656','pwd':''}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '不输入密码', 'sql': 'None', 'CaseId': 3, 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}", 'Method': 'get', 'Module': 'Register'}
+[2019-08-27 10:02:54,206]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 10:02:54,208]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第4条测试用例：输入已存在的手机号
+[2019-08-27 10:02:54,210]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '输入已存在的手机号', 'sql': 'None', 'CaseId': 4, 'ExpectedResult': "{'status':0,'code':'20110','data': None,'msg':'手机号码已被注册'}", 'Method': 'post', 'Module': 'Register'}
+[2019-08-27 10:02:54,485]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-08-27 10:02:54,487]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Register模块里的第5条测试用例：输入错误的手机号
+[2019-08-27 10:02:54,489]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '输入错误的手机号', 'sql': 'None', 'CaseId': 5, 'ExpectedResult': "{'status':0,'code':'20109','data': None,'msg':'手机号码格式不正确'}", 'Method': 'get', 'Module': 'Register'}
+[2019-08-27 10:02:54,738]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-11-29 15:02:09,789]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 15:02:09,802]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'Method': 'get', 'sql': 'None', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Module': 'Login', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}", 'Title': '正常登录'}
+[2019-11-29 15:02:10,317]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-11-29 15:02:10,329]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-11-29 15:02:10,338]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Params': "{'mobilephone':'','pwd':'123456'}", 'Method': 'post', 'sql': 'None', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Module': 'Login', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}", 'Title': '不输入手机号'}
+[2019-11-29 15:02:10,694]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-11-29 15:02:10,705]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-11-29 15:02:10,713]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Params': "{'mobilephone':'18688775656','pwd':''}", 'Method': 'get', 'sql': 'None', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Module': 'Login', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}", 'Title': '不输入密码'}
+[2019-11-29 15:02:11,065]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-11-29 15:02:11,080]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-11-29 15:02:11,089]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'Method': 'post', 'sql': 'None', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Module': 'Login', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}", 'Title': '输入错误的手机号'}
+[2019-11-29 15:02:11,556]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-11-29 15:02:11,570]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-11-29 15:02:11,580]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'Method': 'get', 'sql': 'None', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Module': 'Login', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}", 'Title': '输入错误的密码'}
+[2019-11-29 15:02:12,018]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-11-29 15:41:36,589]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 15:41:36,605]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}", 'CaseId': 1, 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'sql': 'None', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get'}
+[2019-11-29 15:41:36,656]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-11-29 15:41:36,666]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}", 'CaseId': 2, 'Params': "{'mobilephone':'','pwd':'123456'}", 'sql': 'None', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post'}
+[2019-11-29 15:41:36,682]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-11-29 15:41:36,696]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}", 'CaseId': 3, 'Params': "{'mobilephone':'18688775656','pwd':''}", 'sql': 'None', 'Title': '不输入密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get'}
+[2019-11-29 15:41:36,711]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-11-29 15:41:36,724]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}", 'CaseId': 4, 'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'sql': 'None', 'Title': '输入错误的手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'post'}
+[2019-11-29 15:41:36,737]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-11-29 15:41:36,751]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}", 'CaseId': 5, 'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'sql': 'None', 'Title': '输入错误的密码', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get'}
+[2019-11-29 15:42:07,026]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 15:42:07,038]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'CaseId': 1, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}", 'Title': '正常登录', 'Method': 'get', 'sql': 'None', 'Module': 'Login'}
+[2019-11-29 15:42:07,051]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：不输入手机号
+[2019-11-29 15:42:07,062]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'','pwd':'123456'}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'CaseId': 2, 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'手机号不能为空'}", 'Title': '不输入手机号', 'Method': 'post', 'sql': 'None', 'Module': 'Login'}
+[2019-11-29 15:42:07,076]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：不输入密码
+[2019-11-29 15:42:07,088]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'18688775656','pwd':''}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'CaseId': 3, 'ExpectedResult': "{'status':0,'code':'20103','data': None,'msg':'密码不能为空'}", 'Title': '不输入密码', 'Method': 'get', 'sql': 'None', 'Module': 'Login'}
+[2019-11-29 15:42:07,101]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：输入错误的手机号
+[2019-11-29 15:42:07,112]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'186887756569','pwd':'123456'}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'CaseId': 4, 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}", 'Title': '输入错误的手机号', 'Method': 'post', 'sql': 'None', 'Module': 'Login'}
+[2019-11-29 15:42:07,124]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的密码
+[2019-11-29 15:42:07,135]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'mobilephone':'18688775656','pwd':'1234567'}", 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'CaseId': 5, 'ExpectedResult': "{'status':0,'code':'20111','data': None,'msg':'用户名或密码错误'}", 'Title': '输入错误的密码', 'Method': 'get', 'sql': 'None', 'Module': 'Login'}
+[2019-11-29 15:52:48,835]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 15:52:48,847]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': "{'code':200}", 'Method': 'post', 'CaseId': 1, 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'1111'}", 'Title': '正常登录', 'sql': 'None'}
+[2019-11-29 15:52:48,861]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的验证码
+[2019-11-29 15:52:48,870]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': '{\n "code":1,\n "data":"",\n "msg":"验证码错误"\n}', 'Method': 'post', 'CaseId': 5, 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'11'}", 'Title': '输入错误的验证码', 'sql': 'None'}
+[2019-11-29 15:54:31,778]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 15:54:31,794]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Url': 'https://test2-pg.cailian.net/#/login', 'Method': 'post', 'CaseId': 1, 'ExpectedResult': "{'code':200}", 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'1111'}", 'Title': '正常登录', 'Module': 'Login'}
+[2019-11-29 15:54:31,807]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的验证码
+[2019-11-29 15:54:31,817]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Url': 'https://test2-pg.cailian.net/#/login', 'Method': 'post', 'CaseId': 5, 'ExpectedResult': '{\n "code":1,\n "data":"",\n "msg":"验证码错误"\n}', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'11'}", 'Title': '输入错误的验证码', 'Module': 'Login'}
+[2019-11-29 15:56:37,487]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 15:56:37,506]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'1111'}", 'Title': '正常登录', 'Module': 'Login', 'ExpectedResult': "{'code':200}", 'CaseId': 1, 'Method': 'post', 'Url': 'https://test2-pg.cailian.net/#/login'}
+[2019-11-29 15:56:37,609]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的验证码
+[2019-11-29 15:56:37,620]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'11'}", 'Title': '输入错误的验证码', 'Module': 'Login', 'ExpectedResult': '{\n "code":1,\n "data":"",\n "msg":"验证码错误"\n}', 'CaseId': 5, 'Method': 'post', 'Url': 'https://test2-pg.cailian.net/#/login'}
+[2019-11-29 15:59:36,275]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 15:59:36,289]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'1111'}", 'sql': 'None', 'Module': 'Login', 'Title': '正常登录', 'CaseId': 1, 'ExpectedResult': "{'code':200}", 'Method': 'post'}
+[2019-11-29 15:59:36,337]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的验证码
+[2019-11-29 15:59:36,347]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'11'}", 'sql': 'None', 'Module': 'Login', 'Title': '输入错误的验证码', 'CaseId': 5, 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Method': 'post'}
+[2019-11-29 16:03:14,274]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 16:03:14,290]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'1111'}", 'ExpectedResult': "{'code':200}", 'CaseId': 1, 'Title': '正常登录', 'Module': 'Login', 'Method': 'post', 'sql': 'None'}
+[2019-11-29 16:03:14,305]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的验证码
+[2019-11-29 16:03:14,318]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'11'}", 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'CaseId': 5, 'Title': '输入错误的验证码', 'Module': 'Login', 'Method': 'post', 'sql': 'None'}
+[2019-11-29 16:07:52,086]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 16:07:52,103]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'ExpectedResult': "{'code':200}", 'Method': 'post', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'1111'}", 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/#/login', 'Title': '正常登录', 'CaseId': 1}
+[2019-11-29 16:07:52,202]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：输入错误的验证码
+[2019-11-29 16:07:52,218]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Method': 'post', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'11'}", 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/#/login', 'Title': '输入错误的验证码', 'CaseId': 5}
+[2019-11-29 16:08:54,320]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 16:08:54,339]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/#/login', 'Method': 'post', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'1111'}", 'Module': 'Login', 'ExpectedResult': "{'code':200}", 'Title': '正常登录', 'sql': 'None', 'CaseId': 1}
+[2019-11-29 16:08:54,425]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:08:54,444]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/#/login', 'Method': 'post', 'Params': "{'mobilephone':'18610933265','pwd':'96e79218965eb72c92a549dd5a330112','checkcode':'11'}", 'Module': 'Login', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Title': '输入错误的验证码', 'sql': 'None', 'CaseId': 2}
+[2019-11-29 16:11:41,080]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 16:11:41,101]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'ExpectedResult': "{'code':200}", 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/#/login', 'Title': '正常登录', 'sql': 'None', 'CaseId': 1}
+[2019-11-29 16:11:41,181]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:11:41,201]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/#/login', 'Title': '输入错误的验证码', 'sql': 'None', 'CaseId': 2}
+[2019-11-29 16:17:14,149]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 16:17:14,177]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Method': 'post', 'CaseId': 1, 'Url': 'https://test2-pg.cailian.net/#/login', 'sql': 'None', 'ExpectedResult': "{'code':200}", 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}"}
+[2019-11-29 16:17:14,260]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:17:14,283]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '输入错误的验证码', 'Method': 'post', 'CaseId': 2, 'Url': 'https://test2-pg.cailian.net/#/login', 'sql': 'None', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}"}
+[2019-11-29 16:31:47,338]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 16:31:47,369]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'CaseId': 1, 'sql': 'None', 'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Method': 'post', 'Title': '正常登录', 'ExpectedResult': "{'code':200}"}
+[2019-11-29 16:31:47,461]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:31:47,486]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'CaseId': 2, 'sql': 'None', 'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Method': 'post', 'Title': '输入错误的验证码', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}"}
+[2019-11-29 16:32:19,165]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 16:32:19,195]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'ExpectedResult': "{'code':200}", 'Method': 'post', 'sql': 'None', 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Title': '正常登录', 'Url': 'https://test2-pg.cailian.net/#/login'}
+[2019-11-29 16:32:19,248]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:32:19,275]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Method': 'post', 'sql': 'None', 'CaseId': 2, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Title': '输入错误的验证码', 'Url': 'https://test2-pg.cailian.net/#/login'}
+[2019-11-29 16:37:48,652]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 16:37:48,685]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'ExpectedResult': "{'code':200}", 'sql': 'None', 'Module': 'Login', 'Method': 'post', 'CaseId': 1}
+[2019-11-29 16:37:48,762]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:37:48,792]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '输入错误的验证码', 'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'sql': 'None', 'Module': 'Login', 'Method': 'post', 'CaseId': 2}
+[2019-11-29 16:39:48,371]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:39:48,415]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '输入错误的验证码', 'sql': 'None', 'Module': 'Login', 'Method': 'post', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'CaseId': 2, 'Url': 'https://test2-pg.cailian.net/#/login'}
+[2019-11-29 16:42:09,412]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:42:09,452]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'sql': 'None', 'Method': 'post', 'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Module': 'Login', 'CaseId': 2, 'Title': '输入错误的验证码'}
+[2019-11-29 16:43:04,487]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:43:04,526]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Url': 'https://test2-pg.cailian.net/#/login', 'Title': '输入错误的验证码', 'Method': 'post', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Module': 'Login'}
+[2019-11-29 16:43:51,466]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:43:51,510]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Method': 'post', 'Url': 'https://test2-pg.cailian.net/#/login', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'CaseId': 2, 'Title': '输入错误的验证码'}
+[2019-11-29 16:44:12,494]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:44:12,542]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Method': 'post', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Url': 'https://test2-pg.cailian.net/#/login', 'CaseId': 2, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Module': 'Login', 'Title': '输入错误的验证码'}
+[2019-11-29 16:44:21,134]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:44:21,182]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/#/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Title': '输入错误的验证码', 'CaseId': 2, 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Method': 'post', 'sql': 'None', 'Module': 'Login'}
+[2019-11-29 16:44:50,796]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:44:50,855]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Url': 'https://test2-pg.cailian.net/#/login', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Module': 'Login', 'Method': 'post', 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Title': '输入错误的验证码'}
+[2019-11-29 16:48:14,028]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:48:14,081]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/#/login', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Title': '输入错误的验证码', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Method': 'post', 'CaseId': 2, 'sql': 'None'}
+[2019-11-29 16:58:43,674]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 16:58:43,728]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Url': 'https://test2-pg.cailian.net/#/login', 'Method': 'post', 'CaseId': 2, 'Title': '输入错误的验证码', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'sql': 'None', 'Module': 'Login'}
+[2019-11-29 17:52:58,294]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 17:52:58,351]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'sql': 'None', 'Url': 'https://test2-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Title': '输入错误的验证码', 'Method': 'post', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'CaseId': 2}
+[2019-11-29 17:54:11,777]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 17:54:11,829]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/api/login', 'CaseId': 1, 'Method': 'post', 'Module': 'Login', 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'sql': 'None', 'ExpectedResult': "{'code':200}"}
+[2019-11-29 17:54:12,043]-[ERROR]-[my_log.py]-[python14]-[日志信息]:测试执行过程中出错，错误是:{'code': 200} != {'msg': '登录成功', 'data': {'user': {'examineS[3824 chars] 200}
+Diff is 9664 characters long. Set self.maxDiff to None to see it.
+[2019-11-29 17:54:12,393]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 17:54:12,448]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/api/login', 'CaseId': 2, 'Method': 'post', 'Module': 'Login', 'Title': '输入错误的验证码', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'sql': 'None', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}"}
+[2019-11-29 17:54:25,865]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 17:54:25,931]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'sql': 'None', 'CaseId': 1, 'Url': 'https://test2-pg.cailian.net/api/login', 'ExpectedResult': "{'code':200}", 'Method': 'post'}
+[2019-11-29 17:58:40,275]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 17:58:40,337]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'ExpectedResult': "{'code':200}", 'Method': 'post', 'Url': 'https://test2-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Title': '正常登录', 'sql': 'None', 'Module': 'Login'}
+[2019-11-29 18:00:28,413]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:00:28,424]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/api/login', 'Title': '正常登录', 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Module': 'Login', 'sql': 'None', 'CaseId': 1, 'ExpectedResult': "{'code':200}"}
+[2019-11-29 18:00:28,549]-[ERROR]-[my_log.py]-[python14]-[日志信息]:测试执行过程中出错，错误是:{'code': 200} != 200
+[2019-11-29 18:00:28,835]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:00:28,846]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/api/login', 'Title': '输入错误的验证码', 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Module': 'Login', 'sql': 'None', 'CaseId': 2, 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}"}
+[2019-11-29 18:10:09,501]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:10:09,566]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Method': 'post', 'sql': 'None', 'Title': '正常登录', 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/api/login', 'ExpectedResult': 200, 'CaseId': 1}
+[2019-11-29 18:10:09,872]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:10:09,947]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Method': 'post', 'sql': 'None', 'Title': '输入错误的验证码', 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/api/login', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'CaseId': 2}
+[2019-11-29 18:12:23,470]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:12:23,536]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': '正常登录', 'CaseId': 1, 'Method': 'post', 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'sql': 'None'}
+[2019-11-29 18:12:23,798]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:12:23,862]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Title': '输入错误的验证码', 'CaseId': 2, 'Method': 'post', 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'sql': 'None'}
+[2019-11-29 18:12:31,961]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:12:32,032]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'CaseId': 1, 'ExpectedResult': 200, 'Method': 'post', 'Title': '正常登录', 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}"}
+[2019-11-29 18:12:32,383]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:12:32,476]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'CaseId': 2, 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Method': 'post', 'Title': '输入错误的验证码', 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}"}
+[2019-11-29 18:13:26,139]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:13:26,213]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/api/login', 'CaseId': 1, 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'ExpectedResult': 200, 'Method': 'post', 'Title': '正常登录', 'Module': 'Login'}
+[2019-11-29 18:13:26,425]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:13:26,504]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/api/login', 'CaseId': 2, 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Method': 'post', 'Title': '输入错误的验证码', 'Module': 'Login'}
+[2019-11-29 18:15:06,912]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:15:06,986]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'ExpectedResult': 200, 'sql': 'None', 'Url': 'https://test2-pg.cailian.net/api/login', 'Method': 'post', 'CaseId': 1, 'Module': 'Login'}
+[2019-11-29 18:15:07,208]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:15:07,287]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '输入错误的验证码', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'sql': 'None', 'Url': 'https://test2-pg.cailian.net/api/login', 'Method': 'post', 'CaseId': 2, 'Module': 'Login'}
+[2019-11-29 18:15:35,378]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:15:35,465]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'sql': 'None', 'Title': '正常登录', 'Url': 'https://test2-pg.cailian.net/api/login', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'ExpectedResult': 200, 'Method': 'post'}
+[2019-11-29 18:15:35,688]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:15:35,770]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'sql': 'None', 'Title': '输入错误的验证码', 'Url': 'https://test2-pg.cailian.net/api/login', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Method': 'post'}
+[2019-11-29 18:19:53,414]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:19:53,505]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Url': 'https://test2-pg.cailian.net/api/login', 'Module': 'Login', 'sql': 'None', 'CaseId': 1, 'Title': '正常登录', 'Method': 'post', 'ExpectedResult': 200}
+[2019-11-29 18:24:38,723]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:24:38,831]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Url': 'https://test2-pg.cailian.net/api/login', 'Module': 'Login', 'sql': 'None', 'CaseId': 2, 'Title': '输入错误的验证码', 'Method': 'post', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}"}
+[2019-11-29 18:28:10,729]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:28:10,812]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'ExpectedResult': 200, 'Url': 'https://test2-pg.cailian.net/api/login', 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Title': '正常登录', 'Method': 'post', 'CaseId': 1}
+[2019-11-29 18:32:02,552]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:32:02,645]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Url': 'https://test2-pg.cailian.net/api/login', 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Title': '输入错误的验证码', 'Method': 'post', 'CaseId': 2}
+[2019-11-29 18:33:22,114]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:33:22,198]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Method': 'post', 'Url': 'https://test2-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'CaseId': 1, 'sql': 'None', 'Module': 'Login', 'Title': '正常登录'}
+[2019-11-29 18:34:50,617]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:34:50,723]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'CaseId': 1, 'ExpectedResult': 200, 'Url': 'https://test2-pg.cailian.net/api/login', 'Title': '正常登录', 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Method': 'post'}
+[2019-11-29 18:35:10,024]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:35:10,043]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'sql': 'None', 'Title': '正常登录', 'CaseId': 1, 'ExpectedResult': 200, 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Url': 'https://test2-pg.cailian.net/api/login'}
+[2019-11-29 18:35:35,919]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:35:35,930]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'ExpectedResult': 200, 'Url': 'https://test2-pg.cailian.net/api/login', 'sql': 'None', 'Module': 'Login', 'Title': '正常登录', 'Method': 'post'}
+[2019-11-29 18:35:36,096]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:35:36,109]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Url': 'https://test2-pg.cailian.net/api/login', 'sql': 'None', 'Module': 'Login', 'Title': '输入错误的验证码', 'Method': 'post'}
+[2019-11-29 18:36:17,320]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:36:17,407]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Title': '正常登录', 'Url': 'https://test2-pg.cailian.net/api/login', 'sql': 'None', 'ExpectedResult': 200, 'Method': 'post', 'Module': 'Login'}
+[2019-11-29 18:36:17,629]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-11-29 18:36:17,714]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'Title': '输入错误的验证码', 'Url': 'https://test2-pg.cailian.net/api/login', 'sql': 'None', 'ExpectedResult': "{\n 'code':1,\n 'data:'',\n 'msg':'验证码错误'\n}", 'Method': 'post', 'Module': 'Login'}
+[2019-11-29 18:36:50,853]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:36:50,939]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'CaseId': 1, 'Module': 'Login', 'sql': 'None', 'Method': 'post', 'Url': 'https://test2-pg.cailian.net/api/login', 'ExpectedResult': 200}
+[2019-11-29 18:37:09,399]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-11-29 18:37:09,489]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test2-pg.cailian.net/api/login', 'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Method': 'post', 'Module': 'Login', 'Title': '正常登录', 'sql': 'None', 'CaseId': 1}
+[2019-11-29 18:37:09,817]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-02 09:36:46,080]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-02 09:36:46,091]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Module': 'Login', 'Url': 'https://test2-pg.cailian.net/api/login', 'Method': 'post', 'ExpectedResult': 200, 'CaseId': 1, 'sql': 'None', 'Title': '正常登录'}
+[2019-12-02 09:36:49,287]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-02 09:40:31,501]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：输入错误的验证码
+[2019-12-02 09:40:31,512]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'11'}", 'sql': 'None', 'Url': 'https://test2-pg.cailian.net/api/login', 'ExpectedResult': 1, 'Title': '输入错误的验证码', 'CaseId': 2}
+[2019-12-02 10:18:56,496]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-02 10:18:56,507]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Method': 'post', 'ExpectedResult': 200, 'Title': '正常登录', 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Url': 'https://test2-pg.cailian.net/api/login'}
+[2019-12-02 10:18:57,167]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-02 16:53:09,291]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-02 16:53:09,305]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Title': '正常登录', 'CaseId': 1, 'sql': 'None', 'ExpectedResult': 200, 'Method': 'post', 'Module': 'Login'}
+[2019-12-02 16:53:50,449]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-02 16:53:50,465]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Title': '正常登录', 'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/login', 'Module': 'Login', 'sql': 'None'}
+[2019-12-02 16:53:50,859]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-03 10:54:40,830]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-03 10:54:40,841]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'sql': 'None', 'Method': 'post', 'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Url': 'https://test-pg.cailian.net/api/login', 'Title': '正常登录', 'CaseId': 1}
+[2019-12-03 10:54:41,249]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-03 10:55:21,855]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-03 10:55:21,874]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Module': 'Login', 'Url': 'https://test-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'Method': 'post', 'CaseId': 1, 'Title': '正常登录', 'ExpectedResult': 200}
+[2019-12-03 10:58:02,888]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-03 10:58:02,901]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'sql': 'None', 'Url': 'https://test-pg.cailian.net/api/login', 'CaseId': 1, 'ExpectedResult': 200, 'Method': 'post', 'Module': 'Login'}
+[2019-12-03 10:58:03,533]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-03 18:38:56,556]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-03 18:38:56,575]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Method': 'post', 'Module': 'Login', 'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/login', 'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'sql': 'None', 'CaseId': 1}
+[2019-12-03 18:38:57,043]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-03 19:47:47,439]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-03 19:48:22,121]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'96e79218965eb72c92a549dd5a330112','kaptchaCode':'1111'}", 'sql': None, 'CaseId': 1, 'Url': 'https://test-pg.cailian.net/api/login', 'Module': 'Login', 'Title': '正常登录', 'Method': 'post', 'ExpectedResult': 200}
+[2019-12-10 09:57:54,283]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 09:57:54,294]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'ExpectedResult': 200, 'sql': 'None', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录'}
+[2019-12-10 10:18:02,858]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 10:18:02,871]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'sql': 'None', 'Title': '正常登录', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew'}
+[2019-12-10 10:19:12,884]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 10:19:12,897]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Method': 'post', 'Module': 'Login', 'sql': 'None', 'CaseId': 1, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Title': '正常登录'}
+[2019-12-10 10:19:13,340]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 10:33:27,925]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 10:33:27,938]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'CaseId': 1, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'sql': 'None'}
+[2019-12-10 10:33:28,295]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 10:33:28,308]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-10 10:33:28,320]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'CaseId': 2, 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Title': '获取token', 'ExpectedResult': 200, 'Params': "{'companyId':'189','userId':'1187'}", 'Method': 'post', 'sql': 'None'}
+[2019-12-10 10:33:28,672]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 10:43:23,153]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 10:43:23,167]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Title': '正常登录', 'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Module': 'Login', 'Method': 'post'}
+[2019-12-10 10:43:30,254]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 10:43:30,272]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'ExpectedResult': 200, 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'CaseId': 1, 'sql': 'None'}
+[2019-12-10 10:43:30,679]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 10:43:30,697]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-10 10:43:30,707]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'ExpectedResult': 200, 'Title': '获取token', 'Params': "{'companyId':'189','userId':'1187'}", 'Method': 'post', 'CaseId': 2, 'sql': 'None'}
+[2019-12-10 10:43:31,098]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 10:56:49,566]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 10:56:49,580]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Title': '正常登录', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Method': 'post', 'CaseId': 1, 'ExpectedResult': 200, 'Module': 'Login', 'sql': 'None'}
+[2019-12-10 10:56:49,699]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-10 10:56:49,710]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'companyId':'189','userId':'1187'}", 'Title': '获取token', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Method': 'post', 'CaseId': 2, 'ExpectedResult': 200, 'Module': 'Login', 'sql': 'None'}
+[2019-12-10 10:56:50,031]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 10:57:16,235]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-10 10:57:16,247]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Params': "{'companyId':'189','userId':'1187'}", 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'ExpectedResult': 200, 'Method': 'post', 'Module': 'Login', 'CaseId': 2, 'Title': '获取token'}
+[2019-12-10 10:57:16,597]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 10:57:37,295]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-10 10:57:37,310]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Module': 'Login', 'sql': 'None', 'CaseId': 2, 'Title': '获取token', 'Params': "{'companyId':'189','userId':'1187'}", 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Method': 'post'}
+[2019-12-10 10:57:37,645]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 11:14:50,942]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 11:14:50,955]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'CaseId': 1, 'sql': 'None', 'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginNew'}
+[2019-12-10 11:14:51,293]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 11:14:51,306]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-10 11:14:51,315]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'Title': '获取token', 'Params': "{'companyId':'189','userId':'1187'}", 'Method': 'post', 'CaseId': 2, 'sql': 'None', 'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginHandle'}
+[2019-12-10 11:14:51,621]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 11:20:59,212]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 11:20:59,224]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Method': 'post', 'sql': 'None', 'Module': 'Login', 'Title': '正常登录', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1}
+[2019-12-10 11:20:59,574]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 11:20:59,587]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 11:20:59,602]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 1, 'Method': 'post', 'sql': None, 'Module': 'Login', 'Title': '正常登录', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'CaseId': 2}
+[2019-12-10 11:20:59,980]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 11:20:59,994]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 11:21:00,010]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Method': 'post', 'sql': 'None', 'Module': 'Login', 'Title': '获取token', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Params': "{'companyId':'189','userId':'1187'}", 'CaseId': 3}
+[2019-12-10 11:21:00,381]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 11:21:33,227]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 11:21:33,246]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'ExpectedResult': 200, 'sql': 'None', 'CaseId': 1, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'Module': 'Login', 'Method': 'post'}
+[2019-12-10 11:21:58,975]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 11:22:22,398]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 11:22:22,410]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'companyId':'189','userId':'1187'}", 'Module': 'Login', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'sql': 'None', 'Title': '获取token', 'CaseId': 3, 'Method': 'post', 'ExpectedResult': 200}
+[2019-12-10 11:28:47,941]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 11:28:47,954]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'ExpectedResult': 200, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1, 'Module': 'Login'}
+[2019-12-10 11:28:48,281]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 11:28:48,293]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 11:28:48,304]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 1, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'CaseId': 2, 'Module': 'Login'}
+[2019-12-10 11:28:48,576]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 11:28:48,589]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 11:28:48,600]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'ExpectedResult': 200, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Title': '获取token', 'Params': "{'companyId':'189','userId':'1187'}", 'CaseId': 3, 'Module': 'Login'}
+[2019-12-10 11:28:48,962]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:31:08,044]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:31:08,056]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'companyId':'189','userId':'1187'}", 'ExpectedResult': 200, 'CaseId': 3, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Title': '获取token', 'sql': 'None', 'Module': 'Login'}
+[2019-12-10 16:36:47,249]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:36:47,262]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Params': "{'companyId':'189','userId':'1187'}", 'Module': 'Login', 'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'CaseId': 3, 'sql': 'None', 'Title': '获取token'}
+[2019-12-10 16:40:57,792]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:40:57,805]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'CaseId': 3, 'Module': 'Login', 'Params': "{'companyId':'189','userId':'1187'}", 'ExpectedResult': 200, 'Title': '获取token', 'Method': 'post'}
+[2019-12-10 16:41:44,989]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 16:41:45,002]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'sql': 'None', 'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}"}
+[2019-12-10 16:41:45,352]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:41:45,367]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 16:41:45,378]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'Login', 'Title': '正常登录', 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'sql': None, 'ExpectedResult': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}"}
+[2019-12-10 16:41:45,426]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:41:45,442]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'Login', 'Title': '获取token', 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'sql': 'None', 'ExpectedResult': 200, 'Params': "{'companyId':'189','userId':'1187'}"}
+[2019-12-10 16:41:45,789]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:42:38,746]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:42:38,758]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'companyId':'189','userId':'1187'}", 'sql': 'None', 'ExpectedResult': 200, 'Module': 'Login', 'Method': 'post', 'Title': '获取token', 'CaseId': 3, 'Url': 'https://test-pg.cailian.net/api/loginHandle'}
+[2019-12-10 16:42:39,050]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:43:35,535]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 16:43:35,548]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': '正常登录', 'CaseId': 1, 'sql': 'None', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post'}
+[2019-12-10 16:43:35,857]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:43:35,870]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 16:43:35,881]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 1, 'Title': '正常登录', 'CaseId': 2, 'sql': None, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Method': 'post'}
+[2019-12-10 16:43:35,911]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:43:35,922]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': '获取token', 'CaseId': 3, 'sql': 'None', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Module': 'Login', 'Params': "{'companyId':'189','userId':'1187'}", 'Method': 'post'}
+[2019-12-10 16:43:36,201]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:47:29,289]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 16:47:29,301]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'ExpectedResult': 200, 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Module': 'Login'}
+[2019-12-10 16:47:29,611]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:47:29,627]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 16:47:29,639]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'ExpectedResult': 1, 'CaseId': 2, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Module': 'Login'}
+[2019-12-10 16:47:29,671]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:47:29,682]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Title': '获取token', 'ExpectedResult': 200, 'CaseId': 3, 'Params': "{'companyId':'189','userId':'1187'}", 'Module': 'Login'}
+[2019-12-10 16:47:29,990]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:48:08,127]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 16:48:08,137]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'ExpectedResult': 200, 'Title': '正常登录', 'Module': 'Login', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Method': 'post'}
+[2019-12-10 16:48:08,190]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 16:48:08,200]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'CaseId': 2, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'ExpectedResult': 1, 'Title': '正常登录', 'Module': 'Login', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Method': 'post'}
+[2019-12-10 16:48:08,231]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:48:08,242]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'CaseId': 3, 'Params': "{'companyId':'189','userId':'1187'}", 'ExpectedResult': 200, 'Title': '获取token', 'Module': 'Login', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Method': 'post'}
+[2019-12-10 16:48:08,588]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:48:52,774]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 16:48:52,786]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Method': 'post', 'ExpectedResult': 200, 'sql': 'None', 'Module': 'Login', 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Url': 'https://test-pg.cailian.net/api/loginNew'}
+[2019-12-10 16:48:53,089]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:48:53,102]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 16:48:53,110]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Method': 'post', 'ExpectedResult': 1, 'sql': None, 'Module': 'Login', 'CaseId': 2, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Url': 'https://test-pg.cailian.net/api/loginNew'}
+[2019-12-10 16:48:53,141]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:48:53,152]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '获取token', 'Method': 'post', 'ExpectedResult': 200, 'sql': 'None', 'Module': 'Login', 'CaseId': 3, 'Params': "{'companyId':'189','userId':'1187'}", 'Url': 'https://test-pg.cailian.net/api/loginHandle'}
+[2019-12-10 16:48:53,473]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:53:57,984]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 16:53:57,997]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test-pg.cailian.net/api/loginNew', 'CaseId': 1, 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Module': 'Login', 'Method': 'post', 'ExpectedResult': 200, 'Title': '正常登录'}
+[2019-12-10 16:54:04,259]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 16:54:04,271]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'sql': 'None', 'Module': 'Login', 'ExpectedResult': 200, 'CaseId': 1, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}"}
+[2019-12-10 16:54:04,640]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 16:54:04,655]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 16:54:04,668]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'sql': None, 'Module': 'Login', 'ExpectedResult': 1, 'CaseId': 2, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}"}
+[2019-12-10 16:54:04,731]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 16:54:04,743]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '获取token', 'sql': 'None', 'Module': 'Login', 'ExpectedResult': 200, 'CaseId': 3, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Params': "{'companyId':'189','userId':'1187'}"}
+[2019-12-10 16:54:05,051]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:12:01,469]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 17:12:01,483]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Module': 'Login', 'Method': 'post', 'ExpectedResult': 200, 'sql': 'None', 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Url': 'https://test-pg.cailian.net/api/loginNew'}
+[2019-12-10 17:12:56,421]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 17:12:56,434]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'sql': 'None', 'Module': 'Login', 'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'CaseId': 1, 'Method': 'post'}
+[2019-12-10 17:12:56,807]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:12:56,820]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 17:12:56,831]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'sql': None, 'Module': 'Login', 'ExpectedResult': 1, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'CaseId': 2, 'Method': 'post'}
+[2019-12-10 17:12:56,862]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：获取token
+[2019-12-10 17:12:56,872]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'companyId':'189','userId':'1187'}", 'sql': 'None', 'Module': 'Login', 'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Title': '获取token', 'CaseId': 3, 'Method': 'post'}
+[2019-12-10 17:12:57,212]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:15:51,584]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 17:15:51,595]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Module': 'Login', 'sql': 'None', 'Title': '正常登录'}
+[2019-12-10 17:15:51,955]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:15:51,968]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 17:15:51,980]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'ExpectedResult': 1, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Module': 'Login', 'sql': None, 'Title': '正常登录'}
+[2019-12-10 17:15:52,011]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-10 17:15:52,023]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'ExpectedResult': None, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Method': 'post', 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Module': 'Login', 'sql': None, 'Title': '正常登录'}
+[2019-12-10 17:43:34,915]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 17:43:34,928]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'ExpectedResult': 200, 'sql': 'None', 'Module': 'Login', 'Title': '正常登录', 'Method': 'post'}
+[2019-12-10 17:43:35,341]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:43:35,358]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 17:43:35,369]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'ExpectedResult': 1, 'sql': None, 'Module': 'Login', 'Title': '正常登录', 'Method': 'post'}
+[2019-12-10 17:43:35,399]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-10 17:43:35,409]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'ExpectedResult': 200, 'sql': None, 'Module': 'Login', 'Title': '正常登录', 'Method': 'post'}
+[2019-12-10 17:43:35,439]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-10 17:43:35,451]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Params': "{'companyId':'189','userId':'1187'}", 'ExpectedResult': 200, 'sql': 'None', 'Module': 'Login', 'Title': '获取token', 'Method': 'post'}
+[2019-12-10 17:43:35,799]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:43:35,811]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：getHomeButton
+[2019-12-10 17:43:35,828]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 5, 'Url': 'https://test-pg.cailian.net/api/setButton/getHomeButton', 'Params': '{}', 'ExpectedResult': 200, 'sql': None, 'Module': 'Login', 'Title': 'getHomeButton', 'Method': 'post'}
+[2019-12-10 17:43:35,916]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第6条测试用例：queryUserSysFunction
+[2019-12-10 17:43:35,925]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 6, 'Url': 'https://test-pg.cailian.net/api/queryUserSysFunction', 'Params': '{}', 'ExpectedResult': 200, 'sql': None, 'Module': 'Login', 'Title': 'queryUserSysFunction', 'Method': 'post'}
+[2019-12-10 17:43:35,953]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第7条测试用例：functionChildList
+[2019-12-10 17:43:35,965]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 7, 'Url': 'https://test-pg.cailian.net/api/sysfunction/functionChildList', 'Params': '{}', 'ExpectedResult': 200, 'sql': None, 'Module': 'Login', 'Title': 'functionChildList', 'Method': 'post'}
+[2019-12-10 17:43:35,997]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第8条测试用例：findXmSx
+[2019-12-10 17:43:36,013]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 8, 'Url': 'https://test-pg.cailian.net/api/projects/findXmSx', 'Params': '{}', 'ExpectedResult': 200, 'sql': None, 'Module': 'Login', 'Title': 'findXmSx', 'Method': 'post'}
+[2019-12-10 17:43:36,050]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第9条测试用例：findMessageList
+[2019-12-10 17:43:36,063]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 9, 'Url': 'https://test-pg.cailian.net/api/message/findMessageList', 'Params': "{'page':'1','rows':'10','handleOrRead':'2'}", 'ExpectedResult': 200, 'sql': None, 'Module': 'Login', 'Title': 'findMessageList', 'Method': 'post'}
+[2019-12-10 17:43:36,095]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第10条测试用例：judgeInterface
+[2019-12-10 17:43:36,105]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 10, 'Url': 'https://test-pg.cailian.net/api/projectreport/judgeInterface', 'Params': '{}', 'ExpectedResult': 200, 'sql': None, 'Module': 'Login', 'Title': 'judgeInterface', 'Method': 'post'}
+[2019-12-10 17:43:36,152]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第11条测试用例：getProjectNavi
+[2019-12-10 17:43:36,162]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 11, 'Url': 'https://test-pg.cailian.net/api/projects/getProjectNavi', 'Params': "{'findType':'1','year':'2019'}", 'ExpectedResult': 200, 'sql': None, 'Module': 'Login', 'Title': 'getProjectNavi', 'Method': 'post'}
+[2019-12-10 17:48:48,000]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 17:48:48,013]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Module': 'Login', 'sql': 'None', 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'CaseId': 1, 'Title': '正常登录', 'ExpectedResult': 200}
+[2019-12-10 17:48:48,197]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 17:48:48,215]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Module': 'Login', 'sql': None, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'CaseId': 2, 'Title': '正常登录', 'ExpectedResult': 1}
+[2019-12-10 17:48:48,248]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-10 17:48:48,260]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Module': 'Login', 'sql': None, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'CaseId': 3, 'Title': '正常登录', 'ExpectedResult': 200}
+[2019-12-10 17:48:48,286]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-10 17:48:48,298]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'companyId':'189','userId':'1187'}", 'Module': 'Login', 'sql': 'None', 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'CaseId': 4, 'Title': '获取token', 'ExpectedResult': 200}
+[2019-12-10 17:49:09,269]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 17:49:09,280]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Module': 'Login', 'Method': 'post', 'ExpectedResult': 200, 'sql': 'None', 'Title': '正常登录', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}"}
+[2019-12-10 17:49:09,628]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:49:09,639]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 17:49:09,650]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Module': 'Login', 'Method': 'post', 'ExpectedResult': 1, 'sql': None, 'Title': '正常登录', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}"}
+[2019-12-10 17:49:09,678]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-10 17:49:09,690]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Module': 'Login', 'Method': 'post', 'ExpectedResult': 200, 'sql': None, 'Title': '正常登录', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}"}
+[2019-12-10 17:49:09,717]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-10 17:49:09,729]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Module': 'Login', 'Method': 'post', 'ExpectedResult': 200, 'sql': 'None', 'Title': '获取token', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Params': "{'companyId':'189','userId':'1187'}"}
+[2019-12-10 17:49:10,093]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:49:34,272]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 17:49:34,282]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Module': 'Login', 'sql': 'None', 'Title': '正常登录', 'CaseId': 1, 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}"}
+[2019-12-10 17:49:34,574]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:49:34,587]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 17:49:34,596]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 1, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Module': 'Login', 'sql': None, 'Title': '正常登录', 'CaseId': 2, 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}"}
+[2019-12-10 17:49:34,624]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-10 17:49:34,635]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Module': 'Login', 'sql': None, 'Title': '正常登录', 'CaseId': 3, 'Method': 'post', 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}"}
+[2019-12-10 17:49:34,664]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-10 17:49:34,675]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Module': 'Login', 'sql': 'None', 'Title': '获取token', 'CaseId': 4, 'Method': 'post', 'Params': "{'companyId':'189','userId':'1187'}"}
+[2019-12-10 17:49:35,023]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 17:49:35,035]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：getHomeButton
+[2019-12-10 17:49:35,050]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Url': 'https://test-pg.cailian.net/api/setButton/getHomeButton', 'Module': 'Login', 'sql': None, 'Title': 'getHomeButton', 'CaseId': 5, 'Method': 'post', 'Params': '{}'}
+[2019-12-10 18:27:20,645]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 18:27:20,657]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'ExpectedResult': 200, 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'Module': 'Login', 'CaseId': 1, 'Url': 'https://test-pg.cailian.net/api/loginNew'}
+[2019-12-10 18:27:29,408]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 18:27:29,420]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 18:27:29,433]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'ExpectedResult': 1, 'sql': None, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Method': 'post', 'Module': 'Login', 'CaseId': 2, 'Url': 'https://test-pg.cailian.net/api/loginNew'}
+[2019-12-10 18:27:29,494]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-10 18:27:29,507]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'ExpectedResult': 200, 'sql': None, 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Method': 'post', 'Module': 'Login', 'CaseId': 3, 'Url': 'https://test-pg.cailian.net/api/loginNew'}
+[2019-12-10 18:27:29,571]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-10 18:27:29,585]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '获取token', 'ExpectedResult': 200, 'sql': 'None', 'Params': "{'companyId':'189','userId':'1187'}", 'Method': 'post', 'Module': 'Login', 'CaseId': 4, 'Url': 'https://test-pg.cailian.net/api/loginHandle'}
+[2019-12-10 18:27:38,968]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 18:28:02,269]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 18:28:02,286]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Module': 'Login', 'CaseId': 1, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Method': 'post', 'Title': '正常登录'}
+[2019-12-10 18:28:20,654]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 18:28:20,668]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 18:28:20,679]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 1, 'sql': None, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Module': 'Login', 'CaseId': 2, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Method': 'post', 'Title': '正常登录'}
+[2019-12-10 18:28:20,742]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-10 18:28:20,753]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'sql': None, 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Module': 'Login', 'CaseId': 3, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Method': 'post', 'Title': '正常登录'}
+[2019-12-10 18:28:20,786]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-10 18:28:20,798]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'sql': 'None', 'Params': "{'companyId':'189','userId':'1187'}", 'Module': 'Login', 'CaseId': 4, 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Method': 'post', 'Title': '获取token'}
+[2019-12-10 18:28:38,764]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-10 18:37:55,357]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：getHomeButton
+[2019-12-10 18:37:55,372]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Title': 'getHomeButton', 'CaseId': 1, 'Url': 'https://test-pg.cailian.net/api/setButton/getHomeButton', 'Params': '{}', 'sql': None, 'ExpectedResult': 200, 'Module': 'Login'}
+[2019-12-10 19:40:10,072]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：getHomeButton
+[2019-12-10 19:40:10,084]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/setButton/getHomeButton', 'Params': '{}', 'ExpectedResult': 200, 'sql': None, 'CaseId': 1, 'Module': 'Login', 'Title': 'getHomeButton'}
+[2019-12-10 19:42:04,155]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-10 19:42:04,173]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'sql': 'None', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'Module': 'Login', 'ExpectedResult': 200}
+[2019-12-10 19:42:06,489]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-10 19:42:06,500]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Method': 'post', 'sql': None, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'Module': 'Login', 'ExpectedResult': 1}
+[2019-12-10 19:42:06,566]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-10 19:42:06,577]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Method': 'post', 'sql': None, 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'Module': 'Login', 'ExpectedResult': 200}
+[2019-12-10 19:42:06,607]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-10 19:42:06,617]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 4, 'Params': "{'companyId':'189','userId':'1187'}", 'Method': 'post', 'sql': 'None', 'Url': 'https://test-pg.cailian.net/api/loginHandle', 'Title': '获取token', 'Module': 'Login', 'ExpectedResult': 200}
+[2019-12-10 19:44:15,930]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：getHomeButton
+[2019-12-10 19:44:15,944]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': 'getHomeButton', 'Url': 'https://test-pg.cailian.net/api/setButton/getHomeButton', 'Module': 'Login', 'Method': 'post', 'CaseId': 1, 'Params': '{}', 'sql': None, 'ExpectedResult': 200}
+[2019-12-11 19:40:20,718]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 19:40:20,730]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Title': '正常登录', 'sql': None, 'Module': 'Login', 'CaseId': 1, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/loginNew'}
+[2019-12-11 19:40:20,763]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getGroupAndUserTree模块里的第2条测试用例：创建项目
+[2019-12-11 19:40:20,774]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Params': "{'token':'44E226481416714AD5E68F7B3F9A7434'}", 'Title': '创建项目', 'sql': None, 'Module': 'getGroupAndUserTree', 'CaseId': 2, 'Method': 'post', 'Url': 'https://test-pg.cailian.net/api/sysgroup/getGroupAndUserTree'}
+[2019-12-11 19:44:27,065]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 19:44:27,081]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test-pg.cailian.net/api/loginNew', 'ExpectedResult': 200, 'Module': 'Login', 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'sql': None, 'CaseId': 1}
+[2019-12-11 19:44:31,399]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getGroupAndUserTree模块里的第2条测试用例：创建项目
+[2019-12-11 19:44:31,412]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://test-pg.cailian.net/api/sysgroup/getGroupAndUserTree', 'ExpectedResult': 200, 'Module': 'getGroupAndUserTree', 'Title': '创建项目', 'Params': "{'token':'44E226481416714AD5E68F7B3F9A7434'}", 'Method': 'post', 'sql': None, 'CaseId': 2}
+[2019-12-11 19:46:56,740]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 19:46:56,752]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'Module': 'Login', 'Url': 'https://test-pg.cailian.net/api/loginNew', 'Title': '正常登录', 'CaseId': 1}
+[2019-12-11 19:47:00,890]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getGroupAndUserTree模块里的第2条测试用例：创建项目
+[2019-12-11 19:47:00,908]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'Params': "{'token':'44E226481416714AD5E68F7B3F9A7434'}", 'Method': 'post', 'Module': 'getGroupAndUserTree', 'Url': 'https://test-pg.cailian.net/api/sysgroup/getGroupAndUserTree', 'Title': '创建项目', 'CaseId': 2}
+[2019-12-11 21:33:58,306]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 21:33:58,318]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'sql': 'None', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Method': 'post', 'CaseId': 1, 'ExpectedResult': 200, 'Module': 'Login'}
+[2019-12-11 21:33:58,501]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-11 21:33:58,523]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'sql': None, 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Method': 'post', 'CaseId': 2, 'ExpectedResult': 1, 'Module': 'Login'}
+[2019-12-11 21:33:58,607]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-11 21:33:58,627]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'sql': None, 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Method': 'post', 'CaseId': 3, 'ExpectedResult': 200, 'Module': 'Login'}
+[2019-12-11 21:33:58,710]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-11 21:33:58,739]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '获取token', 'Params': "{'companyId':'189','userId':'1187'}", 'sql': 'None', 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Method': 'post', 'CaseId': 4, 'ExpectedResult': 200, 'Module': 'Login'}
+[2019-12-11 21:40:43,083]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 21:40:43,104]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Module': 'Login', 'ExpectedResult': 200, 'sql': None, 'Title': '正常登录', 'CaseId': 1, 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}"}
+[2019-12-11 21:41:39,178]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getGroupAndUserTree模块里的第2条测试用例：创建项目
+[2019-12-11 21:41:39,199]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/sysgroup/getGroupAndUserTree', 'Module': 'getGroupAndUserTree', 'ExpectedResult': 200, 'sql': None, 'Title': '创建项目', 'CaseId': 2, 'Method': 'post', 'Params': "{'token':'44E226481416714AD5E68F7B3F9A7434'}"}
+[2019-12-11 21:46:30,995]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 21:46:31,010]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Method': 'post', 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Module': 'Login', 'CaseId': 1, 'sql': None}
+[2019-12-11 21:46:55,978]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getGroupAndUserTree模块里的第2条测试用例：创建项目
+[2019-12-11 21:46:55,989]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Method': 'post', 'Title': '创建项目', 'Params': "{'token':'44E226481416714AD5E68F7B3F9A7434'}", 'Url': 'https://pg-bate.cailian.net/api/sysgroup/getGroupAndUserTree', 'Module': 'getGroupAndUserTree', 'CaseId': 2, 'sql': None}
+[2019-12-11 21:53:42,800]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 21:53:42,811]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': '正常登录', 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Module': 'Login', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'sql': None}
+[2019-12-11 21:53:46,697]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getGroupAndUserTree模块里的第2条测试用例：创建项目
+[2019-12-11 21:53:46,708]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': '创建项目', 'CaseId': 2, 'Params': "{'token':'44E226481416714AD5E68F7B3F9A7434'}", 'Module': 'getGroupAndUserTree', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/sysgroup/getGroupAndUserTree', 'sql': None}
+[2019-12-11 21:54:04,944]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 21:54:04,957]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'ExpectedResult': 200, 'Module': 'Login', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1, 'Title': '正常登录'}
+[2019-12-11 21:54:13,942]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-11 21:54:13,956]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-11 21:54:13,966]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 1, 'Module': 'Login', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'CaseId': 2, 'Title': '正常登录'}
+[2019-12-11 21:54:14,051]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-11 21:54:14,062]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'Module': 'Login', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'CaseId': 3, 'Title': '正常登录'}
+[2019-12-11 21:54:14,128]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-11 21:54:14,138]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'ExpectedResult': 200, 'Module': 'Login', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Params': "{'companyId':'189','userId':'1187'}", 'CaseId': 4, 'Title': '获取token'}
+[2019-12-11 21:54:23,077]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-11 21:55:42,147]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 21:55:42,161]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': '正常登录', 'CaseId': 1, 'sql': 'None', 'Method': 'post', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Url': 'https://pg-bate.cailian.net/api/loginNew'}
+[2019-12-11 21:55:44,371]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-11 21:55:44,382]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 1, 'Title': '正常登录', 'CaseId': 2, 'sql': None, 'Method': 'post', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Url': 'https://pg-bate.cailian.net/api/loginNew'}
+[2019-12-11 21:55:44,452]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-11 21:55:44,466]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': '正常登录', 'CaseId': 3, 'sql': None, 'Method': 'post', 'Module': 'Login', 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'Url': 'https://pg-bate.cailian.net/api/loginNew'}
+[2019-12-11 21:55:44,542]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-11 21:55:44,553]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': '获取token', 'CaseId': 4, 'sql': 'None', 'Method': 'post', 'Module': 'Login', 'Params': "{'companyId':'189','userId':'1187'}", 'Url': 'https://pg-bate.cailian.net/api/loginHandle'}
+[2019-12-11 21:55:46,775]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：getHomeButton
+[2019-12-11 21:55:46,788]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': 'getHomeButton', 'CaseId': 5, 'sql': None, 'Method': 'post', 'Module': 'Login', 'Params': '{}', 'Url': 'https://pg-bate.cailian.net/api/setButton/getHomeButton'}
+[2019-12-11 21:56:27,502]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 21:56:27,519]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Module': 'Login', 'ExpectedResult': 200, 'CaseId': 1, 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'sql': 'None'}
+[2019-12-11 21:56:36,279]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-11 21:56:36,293]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：正常登录
+[2019-12-11 21:56:36,308]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Module': 'Login', 'ExpectedResult': 1, 'CaseId': 2, 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'sql': None}
+[2019-12-11 21:56:36,384]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第3条测试用例：正常登录
+[2019-12-11 21:56:36,395]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Module': 'Login', 'ExpectedResult': 200, 'CaseId': 3, 'Method': 'post', 'Params': "{'loginName':'18202537202','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'11'}", 'sql': None}
+[2019-12-11 21:56:36,452]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第4条测试用例：获取token
+[2019-12-11 21:56:36,463]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '获取token', 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Module': 'Login', 'ExpectedResult': 200, 'CaseId': 4, 'Method': 'post', 'Params': "{'companyId':'189','userId':'1187'}", 'sql': 'None'}
+[2019-12-11 21:56:45,051]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-11 21:56:45,063]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第5条测试用例：getHomeButton
+[2019-12-11 21:56:45,074]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': 'getHomeButton', 'Url': 'https://pg-bate.cailian.net/api/setButton/getHomeButton', 'Module': 'Login', 'ExpectedResult': 200, 'CaseId': 5, 'Method': 'post', 'Params': '{}', 'sql': None}
+[2019-12-11 21:59:39,852]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：getHomeButton
+[2019-12-11 21:59:39,873]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'sql': None, 'Title': 'getHomeButton', 'Params': '{}', 'Module': 'Login', 'Method': 'post', 'CaseId': 1, 'Url': 'https://test-pg.cailian.net/api/setButton/getHomeButton'}
+[2019-12-11 22:34:23,376]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 22:34:23,388]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'sql': 'None', 'ExpectedResult': 200, 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Title': '正常登录'}
+[2019-12-11 23:11:18,140]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 23:11:18,151]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Method': 'post', 'Module': 'Login', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Title': '正常登录', 'sql': 'None', 'ExpectedResult': 200, 'CaseId': 1}
+[2019-12-11 23:11:18,434]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取
+[2019-12-11 23:11:18,449]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'companyId':'189','userId':'1187'}", 'Method': 'post', 'Module': 'Login', 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Title': '获取', 'sql': 'None', 'ExpectedResult': 200, 'CaseId': 2}
+[2019-12-11 23:11:58,930]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 23:11:58,942]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Method': 'post', 'Module': 'Login', 'CaseId': 1, 'Title': '正常登录', 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'ExpectedResult': 200}
+[2019-12-11 23:11:59,282]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-11 23:11:59,295]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取
+[2019-12-11 23:11:59,307]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Method': 'post', 'Module': 'Login', 'CaseId': 2, 'Title': '获取', 'sql': 'None', 'Params': "{'companyId':'189','userId':'1187'}", 'ExpectedResult': 200}
+[2019-12-11 23:11:59,679]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-11 23:20:15,830]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 23:20:15,846]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Title': '正常登录', 'Method': 'post', 'sql': 'None', 'CaseId': 1, 'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}"}
+[2019-12-11 23:20:16,246]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-11 23:20:16,259]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-11 23:20:16,272]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Title': '获取token', 'Method': 'post', 'sql': 'None', 'CaseId': 2, 'ExpectedResult': 200, 'Params': "{'companyId':'189','userId':'1187'}"}
+[2019-12-11 23:20:16,621]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-11 23:30:02,830]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 23:30:02,847]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'sql': 'None', 'Method': 'post', 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Module': 'Login', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'CaseId': 1}
+[2019-12-11 23:40:34,234]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 23:40:34,255]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/loginNew', 'CaseId': 1, 'Method': 'post', 'sql': 'None', 'Title': '正常登录', 'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Module': 'Login'}
+[2019-12-11 23:41:38,441]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-11 23:41:38,459]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1, 'Method': 'post', 'Module': 'Login', 'Title': '正常登录', 'ExpectedResult': 200, 'sql': 'None', 'Url': 'https://pg-bate.cailian.net/api/loginNew'}
+[2019-12-11 23:41:55,400]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-11 23:41:55,411]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'companyId':'189','userId':'1187'}", 'CaseId': 2, 'Method': 'post', 'Module': 'Login', 'Title': '获取token', 'ExpectedResult': 200, 'sql': 'None', 'Url': 'https://pg-bate.cailian.net/api/loginHandle'}
+[2019-12-12 18:32:16,395]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 18:32:16,409]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'sql': 'None', 'Title': '正常登录', 'ExpectedResult': 200, 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1, 'Url': 'https://pg-bate.cailian.net/api/loginNew'}
+[2019-12-12 18:32:16,802]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-12 18:32:16,815]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 18:32:16,827]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'sql': 'None', 'Title': '获取token', 'ExpectedResult': 200, 'Module': 'Login', 'Params': "{'companyId':'189','userId':'1187'}", 'CaseId': 2, 'Url': 'https://pg-bate.cailian.net/api/loginHandle'}
+[2019-12-12 18:32:17,250]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-12 18:37:33,884]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 18:37:33,897]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Title': '正常登录', 'sql': 'None', 'Module': 'Login', 'CaseId': 1, 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}"}
+[2019-12-12 18:37:34,219]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-12 18:37:34,238]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 18:37:34,253]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Title': '获取token', 'sql': 'None', 'Module': 'Login', 'CaseId': 2, 'Method': 'post', 'Params': "{'companyId':'189','userId':'1187'}"}
+[2019-12-12 18:37:34,593]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-12 19:02:34,765]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:02:34,778]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Title': '正常登录', 'Method': 'post', 'ExpectedResult': 200, 'sql': 'None'}
+[2019-12-12 19:05:21,926]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:05:21,941]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/loginNew', 'sql': 'None', 'ExpectedResult': 200, 'Module': 'Login', 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1, 'Method': 'post'}
+[2019-12-12 19:05:22,054]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 19:05:22,064]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'sql': 'None', 'ExpectedResult': 200, 'Module': 'Login', 'Title': '获取token', 'Params': "{'companyId':'189','userId':'1187'}", 'CaseId': 2, 'Method': 'post'}
+[2019-12-12 19:05:22,132]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-12 19:05:22,146]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'sql': None, 'ExpectedResult': 200, 'Module': 'add_loan', 'Title': '加标', 'Params': "{'id':'1121594'}", 'CaseId': 3, 'Method': 'post'}
+[2019-12-12 19:06:53,168]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:06:53,182]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1, 'Module': 'Login', 'Method': 'post', 'Title': '正常登录', 'sql': 'None', 'ExpectedResult': 200, 'Url': 'https://pg-bate.cailian.net/api/loginNew'}
+[2019-12-12 19:06:53,281]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 19:06:53,292]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'companyId':'189','userId':'1187'}", 'CaseId': 2, 'Module': 'Login', 'Method': 'post', 'Title': '获取token', 'sql': 'None', 'ExpectedResult': 200, 'Url': 'https://pg-bate.cailian.net/api/loginHandle'}
+[2019-12-12 19:06:53,350]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-12 19:06:53,362]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'id':'1121594'}", 'CaseId': 3, 'Module': 'add_loan', 'Method': 'post', 'Title': '加标', 'sql': None, 'ExpectedResult': 200, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList'}
+[2019-12-12 19:07:52,069]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:07:52,083]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Module': 'Login', 'CaseId': 1, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Title': '正常登录', 'Method': 'post', 'ExpectedResult': 200}
+[2019-12-12 19:07:52,181]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 19:07:52,194]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Module': 'Login', 'CaseId': 2, 'Params': "{'companyId':'189','userId':'1187'}", 'Title': '获取token', 'Method': 'post', 'ExpectedResult': 200}
+[2019-12-12 19:07:52,250]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-12 19:07:52,262]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Module': 'add_loan', 'CaseId': 3, 'Params': "{'id':'1121594'}", 'Title': '加标', 'Method': 'post', 'ExpectedResult': 200}
+[2019-12-12 19:12:04,341]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:12:04,359]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Method': 'post', 'sql': 'None', 'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Title': '正常登录', 'Module': 'Login'}
+[2019-12-12 19:12:04,446]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 19:12:04,459]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Method': 'post', 'sql': 'None', 'ExpectedResult': 200, 'Params': "{'companyId':'189','userId':'1187'}", 'Title': '获取token', 'Module': 'Login'}
+[2019-12-12 19:12:04,517]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-12 19:12:04,529]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Method': 'post', 'sql': None, 'ExpectedResult': 200, 'Params': "{'id':'1121594'}", 'Title': '加标', 'Module': 'add_loan'}
+[2019-12-12 19:12:17,174]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:12:17,189]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Title': '正常登录', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Method': 'post', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1, 'ExpectedResult': 200}
+[2019-12-12 19:13:44,562]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:13:44,577]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Module': 'Login', 'CaseId': 1, 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Title': '正常登录', 'sql': 'None', 'ExpectedResult': 200, 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}"}
+[2019-12-12 19:13:44,639]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 19:13:44,650]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Module': 'Login', 'CaseId': 2, 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Title': '获取token', 'sql': 'None', 'ExpectedResult': 200, 'Params': "{'companyId':'189','userId':'1187'}"}
+[2019-12-12 19:13:44,706]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-12 19:13:44,718]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Module': 'add_loan', 'CaseId': 3, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Title': '加标', 'sql': None, 'ExpectedResult': 200, 'Params': "{'id':'1121594'}"}
+[2019-12-12 19:16:03,605]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:16:03,618]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'sql': 'None', 'CaseId': 1, 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'ExpectedResult': 200, 'Method': 'post', 'Module': 'Login'}
+[2019-12-12 19:16:03,679]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 19:16:03,690]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '获取token', 'Params': "{'companyId':'189','userId':'1187'}", 'sql': 'None', 'CaseId': 2, 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'ExpectedResult': 200, 'Method': 'post', 'Module': 'Login'}
+[2019-12-12 19:16:03,750]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-12 19:16:03,763]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '加标', 'Params': "{'id':'1121594'}", 'sql': None, 'CaseId': 3, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'ExpectedResult': 200, 'Method': 'post', 'Module': 'add_loan'}
+[2019-12-12 19:17:15,781]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:17:15,795]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'CaseId': 1, 'Title': '正常登录', 'Module': 'Login', 'ExpectedResult': 200}
+[2019-12-12 19:17:15,864]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 19:17:15,876]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': 'None', 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Method': 'post', 'Params': "{'companyId':'189','userId':'1187'}", 'CaseId': 2, 'Title': '获取token', 'Module': 'Login', 'ExpectedResult': 200}
+[2019-12-12 19:17:15,934]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-12 19:17:15,947]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Method': 'post', 'Params': "{'id':'1121594'}", 'CaseId': 3, 'Title': '加标', 'Module': 'add_loan', 'ExpectedResult': 200}
+[2019-12-12 19:17:52,724]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:17:52,738]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'Title': '正常登录', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'ExpectedResult': 200, 'Module': 'Login', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Method': 'post', 'sql': 'None'}
+[2019-12-12 19:21:30,372]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:21:30,384]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/loginNew', 'CaseId': 1, 'ExpectedResult': 200, 'Title': '正常登录', 'sql': 'None', 'Method': 'post', 'Module': 'Login', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}"}
+[2019-12-12 19:21:30,572]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 19:21:30,587]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'CaseId': 2, 'ExpectedResult': 200, 'Title': '获取token', 'sql': 'None', 'Method': 'post', 'Module': 'Login', 'Params': "{'companyId':'189','userId':'1187'}"}
+[2019-12-12 19:23:52,100]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-12 19:23:52,128]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'CaseId': 1, 'Title': '正常登录', 'ExpectedResult': 200, 'Method': 'post', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'sql': 'None'}
+[2019-12-12 19:23:52,225]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-12 19:23:52,237]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'Login', 'CaseId': 2, 'Title': '获取token', 'ExpectedResult': 200, 'Method': 'post', 'Params': "{'companyId':'189','userId':'1187'}", 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'sql': 'None'}
+[2019-12-12 19:23:52,308]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-12 19:23:52,333]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'add_loan', 'CaseId': 3, 'Title': '加标', 'ExpectedResult': 200, 'Method': 'post', 'Params': "{'id':'1121594'}", 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'sql': None}
+[2019-12-13 13:11:37,155]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:11:37,170]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'id':'1121594'}", 'sql': None, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Title': '加标', 'Module': 'add_loan', 'Method': 'post', 'ExpectedResult': 200, 'CaseId': 3}
+[2019-12-13 13:17:46,308]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:17:46,329]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'add_loan', 'sql': None, 'Params': "{'id':'1121594'}", 'Method': 'post', 'Title': '加标', 'ExpectedResult': 200, 'CaseId': 3, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList'}
+[2019-12-13 13:22:32,325]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:22:32,347]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'add_loan', 'Title': '加标', 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Method': 'post', 'Params': "{'id':'1121594'}", 'ExpectedResult': 200, 'CaseId': 3, 'sql': None}
+[2019-12-13 13:26:02,034]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:26:02,055]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'add_loan', 'sql': None, 'Method': 'post', 'ExpectedResult': 200, 'Params': "{'id':'1121594'}", 'CaseId': 3, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Title': '加标'}
+[2019-12-13 13:26:46,784]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:26:46,800]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'id':'1121594'}", 'Title': '加标', 'Module': 'add_loan', 'ExpectedResult': 200, 'CaseId': 3, 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'sql': None}
+[2019-12-13 13:27:15,644]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:27:15,664]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'add_loan', 'Title': '加标', 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Params': "{'id':'1121594'}", 'ExpectedResult': 200, 'CaseId': 3, 'Method': 'post', 'sql': None}
+[2019-12-13 13:27:35,360]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:27:35,384]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'Method': 'post', 'ExpectedResult': 200, 'Module': 'add_loan', 'Title': '加标', 'sql': None, 'Params': "{'id':'1121594'}", 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList'}
+[2019-12-13 13:29:55,214]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:29:55,238]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Title': '加标', 'ExpectedResult': 200, 'Method': 'post', 'CaseId': 3, 'Module': 'add_loan', 'Params': "{'id':'1121594'}", 'sql': None}
+[2019-12-13 13:30:16,391]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:30:16,413]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'id':'1121594'}", 'sql': None, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Title': '加标', 'Method': 'post', 'Module': 'add_loan', 'ExpectedResult': 200, 'CaseId': 3}
+[2019-12-13 13:31:45,540]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:31:45,567]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'CaseId': 3, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'ExpectedResult': 200, 'sql': None, 'Params': "{'id':'1121594'}", 'Title': '加标', 'Module': 'add_loan'}
+[2019-12-13 13:41:28,914]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:41:29,566]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Title': '加标', 'Params': "{'id':'1121594'}", 'CaseId': 3, 'Method': 'post', 'sql': None, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Module': 'add_loan'}
+[2019-12-13 13:42:55,816]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:42:55,833]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '加标', 'CaseId': 3, 'ExpectedResult': 200, 'Module': 'add_loan', 'Method': 'post', 'Params': "{'id':'1121594'}", 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'sql': None}
+[2019-12-13 13:47:35,564]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:47:36,067]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 3, 'sql': None, 'ExpectedResult': 200, 'Module': 'add_loan', 'Params': "{'id':'1121594'}", 'Method': 'post', 'Title': '加标', 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList'}
+[2019-12-13 13:51:19,355]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-13 13:51:19,661]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'ExpectedResult': 200, 'CaseId': 3, 'Title': '加标', 'sql': None, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Params': "{'id':'1121594'}", 'Module': 'add_loan'}
+[2019-12-19 09:19:44,259]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-19 09:19:44,275]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'CaseId': 1, 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Title': '正常登录', 'Module': 'Login'}
+[2019-12-19 09:19:44,862]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-19 09:19:44,891]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-19 09:19:44,912]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'CaseId': 2, 'sql': 'None', 'Params': "{'companyId':'189','userId':'1187'}", 'Title': '获取token', 'Module': 'Login'}
+[2019-12-19 09:19:45,370]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-19 09:24:14,425]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-19 09:24:16,527]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Params': "{'id':'1121594'}", 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Title': '加标', 'Method': 'post', 'ExpectedResult': 200, 'CaseId': 3, 'sql': None, 'Module': 'add_loan'}
+[2019-12-19 09:24:52,130]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-19 09:24:52,146]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Module': 'Login', 'CaseId': 1, 'Title': '正常登录', 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'ExpectedResult': 200}
+[2019-12-19 09:24:52,241]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-19 09:24:52,257]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Module': 'Login', 'CaseId': 2, 'Title': '获取token', 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'sql': 'None', 'Params': "{'companyId':'189','userId':'1187'}", 'ExpectedResult': 200}
+[2019-12-19 09:25:37,084]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第1条测试用例：正常登录
+[2019-12-19 09:25:37,108]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 1, 'sql': 'None', 'Params': "{'loginName':'18610933265','password':'e3ceb5881a0a1fdaad01296d7554868d','kaptchaCode':'1111'}", 'Url': 'https://pg-bate.cailian.net/api/loginNew', 'Method': 'post', 'ExpectedResult': 200, 'Title': '正常登录', 'Module': 'Login'}
+[2019-12-19 09:25:37,189]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试Login模块里的第2条测试用例：获取token
+[2019-12-19 09:25:37,201]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'CaseId': 2, 'sql': 'None', 'Params': "{'companyId':'189','userId':'1187'}", 'Url': 'https://pg-bate.cailian.net/api/loginHandle', 'Method': 'post', 'ExpectedResult': 200, 'Title': '获取token', 'Module': 'Login'}
+[2019-12-19 09:26:14,925]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-19 09:26:16,552]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'CaseId': 3, 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Params': "{'id':'1121594'}", 'Module': 'add_loan', 'Title': '加标', 'Method': 'post', 'ExpectedResult': 200}
+[2019-12-19 22:32:05,487]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试add_loan模块里的第3条测试用例：加标
+[2019-12-19 22:32:06,257]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Params': "{'id':'1121594'}", 'CaseId': 3, 'sql': None, 'Title': '加标', 'Module': 'add_loan', 'ExpectedResult': 200, 'Method': 'post'}
+[2019-12-24 09:49:35,987]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getJurisdiction模块里的第1条测试用例：正常创建项目type=2
+[2019-12-24 09:49:36,003]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Module': 'getJurisdiction', 'ExpectedResult': 200, 'Method': 'post', 'Title': '正常创建项目type=2', 'Url': 'https://pg-bate.cailian.net/api/sysgroup/getJurisdiction', 'Params': "{'type':'2'}", 'sql': None, 'CaseId': 1}
+[2019-12-24 09:49:37,004]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:50:29,939]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getJurisdiction模块里的第1条测试用例：正常创建项目type=2
+[2019-12-24 09:50:29,955]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/sysgroup/getJurisdiction', 'Params': "{'type':'2'}", 'sql': None, 'Method': 'post', 'CaseId': 1, 'Title': '正常创建项目type=2', 'Module': 'getJurisdiction', 'ExpectedResult': 200}
+[2019-12-24 09:50:30,704]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:50:30,724]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getJurisdiction模块里的第2条测试用例：异常type=1
+[2019-12-24 09:50:30,737]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/sysgroup/getJurisdiction', 'Params': "{'type':'1'}", 'sql': None, 'Method': 'post', 'CaseId': 2, 'Title': '异常type=1', 'Module': 'getJurisdiction', 'ExpectedResult': 200}
+[2019-12-24 09:50:31,436]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:50:31,451]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getJurisdiction模块里的第3条测试用例：异常type=0
+[2019-12-24 09:50:31,466]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/sysgroup/getJurisdiction', 'Params': "{'type':'0'}", 'sql': None, 'Method': 'post', 'CaseId': 3, 'Title': '异常type=0', 'Module': 'getJurisdiction', 'ExpectedResult': 200}
+[2019-12-24 09:50:32,211]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:50:32,226]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getJurisdiction模块里的第4条测试用例：异常不传参数
+[2019-12-24 09:50:32,239]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Url': 'https://pg-bate.cailian.net/api/sysgroup/getJurisdiction', 'Params': '{}', 'sql': None, 'Method': 'post', 'CaseId': 4, 'Title': '异常不传参数', 'Module': 'getJurisdiction', 'ExpectedResult': 200}
+[2019-12-24 09:50:32,938]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:52:54,664]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getHomeButton模块里的第1条测试用例：首页
+[2019-12-24 09:52:54,679]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'CaseId': 1, 'sql': None, 'Module': 'getHomeButton', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/setButton/getHomeButton', 'Params': '{}', 'Title': '首页'}
+[2019-12-24 09:52:55,032]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试queryUserSysFunction模块里的第2条测试用例：首页
+[2019-12-24 09:52:55,044]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'CaseId': 2, 'sql': None, 'Module': 'queryUserSysFunction', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/queryUserSysFunction', 'Params': '{}', 'Title': '首页'}
+[2019-12-24 09:52:55,492]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试functionChildList模块里的第3条测试用例：首页
+[2019-12-24 09:52:55,505]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'CaseId': 3, 'sql': None, 'Module': 'functionChildList', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Params': "{'id':'1121594'}", 'Title': '首页'}
+[2019-12-24 09:52:55,807]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试findXmSx模块里的第4条测试用例：首页
+[2019-12-24 09:52:55,821]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'CaseId': 4, 'sql': None, 'Module': 'findXmSx', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/projects/findXmSx', 'Params': '{}', 'Title': '首页'}
+[2019-12-24 09:52:56,175]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试findMessageList模块里的第5条测试用例：首页
+[2019-12-24 09:52:56,195]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'CaseId': 5, 'sql': None, 'Module': 'findMessageList', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/message/findMessageList', 'Params': "{'page':'1','rows':'10','handleOrRead':'2'}", 'Title': '首页'}
+[2019-12-24 09:52:56,538]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试judgeInterface模块里的第6条测试用例：首页
+[2019-12-24 09:52:56,559]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'CaseId': 6, 'sql': None, 'Module': 'judgeInterface', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/projectreport/judgeInterface', 'Params': '{}', 'Title': '首页'}
+[2019-12-24 09:52:56,813]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getProjectNavi模块里的第7条测试用例：首页
+[2019-12-24 09:52:56,832]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'CaseId': 7, 'sql': None, 'Module': 'getProjectNavi', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/projects/getProjectNavi', 'Params': "{'findType':'0','year':'2019'}", 'Title': '首页'}
+[2019-12-24 09:52:57,813]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getProjectListByStatus模块里的第8条测试用例：首页
+[2019-12-24 09:52:57,826]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'ExpectedResult': 200, 'CaseId': 8, 'sql': None, 'Module': 'getProjectListByStatus', 'Method': 'post', 'Url': 'https://pg-bate.cailian.net/api/projects/getProjectListByStatus', 'Params': "{'findType':'0','groupId':'','year':'2019','projectName':'','projectStatus':'all','homeAllFlag':'1','pModel':'0,1,2','pagesize':'10','page':'1'}", 'Title': '首页'}
+[2019-12-24 09:53:17,595]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getHomeButton模块里的第1条测试用例：首页
+[2019-12-24 09:53:17,608]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '首页', 'Url': 'https://pg-bate.cailian.net/api/setButton/getHomeButton', 'Method': 'post', 'Params': '{}', 'Module': 'getHomeButton', 'ExpectedResult': 200, 'sql': None, 'CaseId': 1}
+[2019-12-24 09:53:18,401]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:53:18,415]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试queryUserSysFunction模块里的第2条测试用例：首页
+[2019-12-24 09:53:18,429]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '首页', 'Url': 'https://pg-bate.cailian.net/api/queryUserSysFunction', 'Method': 'post', 'Params': '{}', 'Module': 'queryUserSysFunction', 'ExpectedResult': 200, 'sql': None, 'CaseId': 2}
+[2019-12-24 09:53:19,410]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:53:19,428]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试functionChildList模块里的第3条测试用例：首页
+[2019-12-24 09:53:19,442]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '首页', 'Url': 'https://pg-bate.cailian.net/api/sysfunction/functionChildList', 'Method': 'post', 'Params': "{'id':'1121594'}", 'Module': 'functionChildList', 'ExpectedResult': 200, 'sql': None, 'CaseId': 3}
+[2019-12-24 09:53:20,124]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:53:20,140]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试findXmSx模块里的第4条测试用例：首页
+[2019-12-24 09:53:20,152]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '首页', 'Url': 'https://pg-bate.cailian.net/api/projects/findXmSx', 'Method': 'post', 'Params': '{}', 'Module': 'findXmSx', 'ExpectedResult': 200, 'sql': None, 'CaseId': 4}
+[2019-12-24 09:53:20,981]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:53:20,994]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试findMessageList模块里的第5条测试用例：首页
+[2019-12-24 09:53:21,008]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '首页', 'Url': 'https://pg-bate.cailian.net/api/message/findMessageList', 'Method': 'post', 'Params': "{'page':'1','rows':'10','handleOrRead':'2'}", 'Module': 'findMessageList', 'ExpectedResult': 200, 'sql': None, 'CaseId': 5}
+[2019-12-24 09:53:21,773]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:53:21,789]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试judgeInterface模块里的第6条测试用例：首页
+[2019-12-24 09:53:21,802]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '首页', 'Url': 'https://pg-bate.cailian.net/api/projectreport/judgeInterface', 'Method': 'post', 'Params': '{}', 'Module': 'judgeInterface', 'ExpectedResult': 200, 'sql': None, 'CaseId': 6}
+[2019-12-24 09:53:22,499]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:53:22,516]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getProjectNavi模块里的第7条测试用例：首页
+[2019-12-24 09:53:22,530]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '首页', 'Url': 'https://pg-bate.cailian.net/api/projects/getProjectNavi', 'Method': 'post', 'Params': "{'findType':'0','year':'2019'}", 'Module': 'getProjectNavi', 'ExpectedResult': 200, 'sql': None, 'CaseId': 7}
+[2019-12-24 09:53:23,948]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:53:23,963]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试getProjectListByStatus模块里的第8条测试用例：首页
+[2019-12-24 09:53:23,978]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Title': '首页', 'Url': 'https://pg-bate.cailian.net/api/projects/getProjectListByStatus', 'Method': 'post', 'Params': "{'findType':'0','groupId':'','year':'2019','projectName':'','projectStatus':'all','homeAllFlag':'1','pModel':'0,1,2','pagesize':'10','page':'1'}", 'Module': 'getProjectListByStatus', 'ExpectedResult': 200, 'sql': None, 'CaseId': 8}
+[2019-12-24 09:53:25,570]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:57:50,394]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试创建项目模块里的第1条测试用例：正确的参数
+[2019-12-24 09:57:50,409]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'CaseId': 1, 'Url': 'https://pg-bate.cailian.net/api/project/addProject', 'Module': '创建项目', 'Title': '正确的参数', 'Params': 'projectName=33&reportType=67984&assessmentBaseDate=2019-12-23&assessmentObjectiveId=1275&leaderId=1187&projectExpenseExpect=12.00&firstAppraiser=238&secondAppraiser=277&otherProject=[{"name":"22","rankid":"","prohibitDeletion":true,"level":1,"_expanded":true,"_level":0,"_show":true,"children":[]}]', 'Method': 'post'}
+[2019-12-24 09:57:51,438]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:57:51,459]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试创建项目模块里的第2条测试用例：所有参数为空
+[2019-12-24 09:57:51,475]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'CaseId': 2, 'Url': 'https://pg-bate.cailian.net/api/project/addProject', 'Module': '创建项目', 'Title': '所有参数为空', 'Params': '{}', 'Method': 'post'}
+[2019-12-24 09:57:51,575]-[ERROR]-[my_log.py]-[python14]-[日志信息]:测试执行过程中出错，错误是:'200' != '500'
+- 200
+? ^
++ 500
+? ^
+
+[2019-12-24 09:57:52,350]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试创建项目模块里的第3条测试用例：预期合同价为0
+[2019-12-24 09:57:52,365]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'CaseId': 3, 'Url': 'https://pg-bate.cailian.net/api/project/addProject', 'Module': '创建项目', 'Title': '预期合同价为0', 'Params': 'projectName=33&reportType=67984&assessmentBaseDate=2019-12-23&assessmentObjectiveId=1275&leaderId=1187&projectExpenseExpect=0&firstAppraiser=238&secondAppraiser=277&otherProject=[{"name":"22","rankid":"","prohibitDeletion":true,"level":1,"_expanded":true,"_level":0,"_show":true,"children":[]}]', 'Method': 'post'}
+[2019-12-24 09:57:53,377]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:57:53,394]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试创建项目模块里的第4条测试用例：预期合同价为100
+[2019-12-24 09:57:53,406]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'CaseId': 4, 'Url': 'https://pg-bate.cailian.net/api/project/addProject', 'Module': '创建项目', 'Title': '预期合同价为100', 'Params': 'projectName=33&reportType=67984&assessmentBaseDate=2019-12-23&assessmentObjectiveId=1275&leaderId=1187&projectExpenseExpect=100&firstAppraiser=238&secondAppraiser=277&otherProject=[{"name":"22","rankid":"","prohibitDeletion":true,"level":1,"_expanded":true,"_level":0,"_show":true,"children":[]}]', 'Method': 'post'}
+[2019-12-24 09:57:54,363]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:57:54,379]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试创建项目模块里的第5条测试用例：预期合同价为21.22
+[2019-12-24 09:57:54,392]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'CaseId': 5, 'Url': 'https://pg-bate.cailian.net/api/project/addProject', 'Module': '创建项目', 'Title': '预期合同价为21.22', 'Params': 'projectName=33&reportType=67984&assessmentBaseDate=2019-12-23&assessmentObjectiveId=1275&leaderId=1187&projectExpenseExpect=21.22&firstAppraiser=238&secondAppraiser=277&otherProject=[{"name":"22","rankid":"","prohibitDeletion":true,"level":1,"_expanded":true,"_level":0,"_show":true,"children":[]}]', 'Method': 'post'}
+[2019-12-24 09:57:55,334]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:57:55,351]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试创建项目模块里的第6条测试用例：预期合同价为21.224
+[2019-12-24 09:57:55,364]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'CaseId': 6, 'Url': 'https://pg-bate.cailian.net/api/project/addProject', 'Module': '创建项目', 'Title': '预期合同价为21.224', 'Params': 'projectName=33&reportType=67984&assessmentBaseDate=2019-12-23&assessmentObjectiveId=1275&leaderId=1187&projectExpenseExpect=21.224&firstAppraiser=238&secondAppraiser=277&otherProject=[{"name":"22","rankid":"","prohibitDeletion":true,"level":1,"_expanded":true,"_level":0,"_show":true,"children":[]}]', 'Method': 'post'}
+[2019-12-24 09:57:56,328]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 09:57:56,345]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试创建项目模块里的第7条测试用例：公司名称为空
+[2019-12-24 09:57:56,357]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'sql': None, 'ExpectedResult': 200, 'CaseId': 7, 'Url': 'https://pg-bate.cailian.net/api/project/addProject', 'Module': '创建项目', 'Title': '公司名称为空', 'Params': 'projectName=33&reportType=67984&assessmentBaseDate=2019-12-23&assessmentObjectiveId=1275&leaderId=1187&projectExpenseExpect=&firstAppraiser=238&secondAppraiser=277&otherProject=[{"name":"22","rankid":"","prohibitDeletion":true,"level":1,"_expanded":true,"_level":0,"_show":true,"children":[]}]', 'Method': 'post'}
+[2019-12-24 09:57:57,415]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 10:00:45,413]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试verificationProjectName模块里的第1条测试用例：传正确的项目名称
+[2019-12-24 10:00:45,428]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Params': "{'projectName':'project'}", 'ExpectedResult': 200, 'sql': None, 'Title': '传正确的项目名称', 'Module': 'verificationProjectName', 'CaseId': 1, 'Url': 'https://pg-bate.cailian.net/api/project/verificationProjectName'}
+[2019-12-24 10:00:46,821]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass
+[2019-12-24 10:00:46,856]-[INFO]-[my_log.py]-[python14]-[日志信息]:------正在测试verificationProjectName模块里的第2条测试用例：错误的项目名称
+[2019-12-24 10:00:46,871]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试数据是{'Method': 'post', 'Params': "{'projectName':'project333'}", 'ExpectedResult': 200, 'sql': None, 'Title': '错误的项目名称', 'Module': 'verificationProjectName', 'CaseId': 2, 'Url': 'https://pg-bate.cailian.net/api/project/verificationProjectName'}
+[2019-12-24 10:00:48,124]-[INFO]-[my_log.py]-[python14]-[日志信息]:测试结果是：pass

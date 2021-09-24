@@ -1,0 +1,185 @@
+/*设置整个页面的背景样式*/
+body{
+    background:white;
+}
+
+.top_menu{
+    height:100px;
+    background: #7e8c8d;
+    /*background:blue*/
+}
+
+.title{
+    background:darkcyan;
+    height:100px;
+    color:black;
+    width:300px;/*默认高度是父类高度*/
+    font:normal 32px/ 80px 微软雅黑; /* 黑体 ， 字体大小，行高 上下居中*/
+    text-align:center;
+    float:left;
+}
+/* 整体列表上浮*/
+.menu_list {
+    margin-left: 10px;
+    text-align: center;
+    width:1000px;
+    height:100px;
+    float:left;
+
+}
+/* 整体列表样式*/
+.menu_list ul{
+    margin:13px 0 0 0;
+    list-style: none;  /*设置列表的显示样式，去掉原点标记*/
+    height:100px;
+    padding:0;    /*上下左右距离*/
+    }
+/*列表内容样式*/
+.menu_list li{
+    border-radius: 15px;
+    color:black;
+    height:80px;
+    width: 18%;
+    font:normal 18px/ 60px 微软雅黑;
+    text-align:center;
+    float:left;
+}
+/*鼠标滑过变色*/
+.menu_list li:hover{
+    color: blue;
+}
+/*退出登录*/
+.top_user {
+    width:100px;
+    height:100px;
+    float:right;
+    text-align:center;
+    margin:13px;
+}
+.top_user a{
+    color:black;
+    font:normal 18px/ 60px 微软雅黑;
+    }
+/*去除a标签下划线*/
+.top_user a:link {text-decoration:none;}
+/*内容*/
+.main_content{
+    width:1200px;
+    height: 650px;
+    position: absolute;
+    left: 320px;
+    top: 100px;
+}
+/*侧边栏 总长，总宽*/
+.left_menu{
+    background: #7e8c8d;
+    position: absolute;
+    text-align:center;
+    top: 100px;
+    left: 0;
+    width: 300px;
+    height: 750px;
+    font: normal 22px/100px 微软雅黑;
+}
+.left_menu_list{
+    height: 65px;
+    line-height: 65px
+}
+.left_menu_list a{
+    color: black ;
+    font: normal 15px/15px 微软雅黑
+}
+/*项目信息页面显示窗口*/
+.pro_info{
+    width: 300px;
+    height: 230px;
+    border: solid 1px rgba(58, 147, 153, 0.47);
+    margin-top: 35px;
+    margin-left: 60px;
+    float: left;
+    border-radius: 15px;  /*变宽圆角*/
+}
+.pro_title{
+    background: azure;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font: normal 20px/50px "Microsoft YaHei UI";
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+.pro_info p{
+    font: normal 20px/50px "Microsoft YaHei UI";
+    text-align: center;
+}
+/*删除按钮*/
+.pro_info a {
+    background: azure;
+    font: normal 20px/50px "Microsoft YaHei UI";
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/*增加项目窗口*/
+.add_pro{
+    position: fixed;
+    left: 36%;
+    top: 150px;
+    width: 550px;
+    height:500px;
+    background: aliceblue;
+    border: solid 1px rgba(58, 147, 153, 0.47);
+    border-radius: 15px;  /*变宽圆角*/
+}
+.alert_title{
+    font:bold 24px/30px "Microsoft YaHei UI";
+    color:#0033cc;
+    text-align:center;
+    margin-bottom:20px;}
+
+.alert_input label{
+    width:100px;
+    height:50px;
+    font: normal 20px/50px "Microsoft YaHei UI";
+    margin-left:30px;
+    color:#03c;
+}
+.alert_input input{
+    height:75%;
+    width:200px;
+    border-radius:5px;
+    border:solid 1px #0033cc;
+}
+.pro_desc{
+    font: normal 20px/50px "Microsoft YaHei UI";
+    color:#03c;
+    margin-left:30px;
+}
+.pro_desc textarea{
+    margin:0 9%;
+    width:90%;
+    height:100px;
+    border:solid 1px #0033cc;
+    border-radius:5px
+}
+.pro_tj{
+    text-align:center;
+    font-size:25px;
+
+    }
+.hide{
+    display: none;
+}
+.show{
+    display:block;
+}
+/*弹出添加项目屏蔽其他按钮*/
+.back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(146,151,162.0.5);
+    width: 100%;
+    height: 900px;
+
+}

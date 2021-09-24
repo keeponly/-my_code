@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>登录页面</title>
+
+
+
+
+
+</head>
+
+ <body bgcolor="lightblue">
+
+
+
+<!--标题-->
+
+ <div class="text" style="text-align:center"><h3>Welcom</h3>
+
+ </div>
+
+<!--分割线-->
+
+<hr>
+
+
+
+     <!--输入文本-->
+
+<form>
+
+ 用户名:<input type="text" name="Amy" id="username"><br>
+
+ 密  码:<input type="password" name="123456" id="password"><br>
+
+     <!--单选框-->
+
+ 性别:<input type="radio" name="性别">男
+
+ <input type="radio" name="性别">女
+
+ <input type="radio" name="性别">未知<br>
+
+     <!--上传文件-->
+
+ 头像:<input type="file"><br>
+
+     <!--下拉选项-->
+
+ 住址:<select>
+
+     <option>浙江省</option>
+
+     <option>江苏省</option>
+
+ </select>
+
+ <select>
+
+     <option>杭州市</option>
+
+     <option>南京市</option>
+
+ </select><br>
+
+     <!--复选框-->
+
+ 爱好:<input type="checkbox" value="游泳">游泳
+
+ <input type="checkbox" value="美食">美食
+
+ <input type="checkbox">打豆豆<br>
+
+ <!--文本框-->
+
+ 备注信息:<textarea cols="15" rows="5"></textarea><br>
+
+<!--图片，本地的图片怎么不能显示在网页里面呢？-->
+
+ <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555006887873&di=fa1ed0ea06629053889396cf7dc3c6e9&imgtype=0&src=http%3A%2F%2Fs7.sinaimg.cn%2Fmw690%2F0043CtDBzy7hW5V99r056">
+
+<br>
+
+     <!--按钮-->
+
+
+
+     <input type="button" value="登录" id="sub" >
+
+     <input type="reset" value="重置" id="cancel">
+
+</form>
+
+<script>
+
+document.getElementById("sub").onclick=function(){window.alert("document.getElementById("username").value+"\n"+document.getElementById("password").value")};
+
+
+
+</script>
+
+ </body>
+
+</html>

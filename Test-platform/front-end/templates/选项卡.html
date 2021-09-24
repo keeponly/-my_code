@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../folder/reset.css" type="text/css">
+    <style type="text/css">
+        .box{
+            height: 60px;
+            margin: 10px auto 0 10px; /*--上右下左*/
+            width:100%;
+        }
+
+        .menu ul{
+            margin-left: 30px;
+        }
+        .menu li{
+            list-style: none;
+            margin-right: 10px;
+            width: 150px;
+            font: normal 18px/60px "Microsoft YaHei UI";
+            float: left;
+            text-align: center;
+        }
+        .cur{
+            background:#9ad2ed;
+            }
+        .content{
+            width:100%;
+            float: left;
+        }
+        .content div{
+            margin-left:30px;
+            width:100%;
+            height:500px;
+            display:none
+            }
+          /* css注释 选择器*/
+        .content .active{
+            display:block;}
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $(".menu li").click(function () {
+                $(this).addClass("cur").siblings().removeClass("cur");
+                $(".content div").eq($(this).index()).addClass('active').siblings().removeClass('active')
+            });
+            /*添加*/
+            $('.add_data').click(function () {
+                const tr = '<tr>' + $(this).siblings('table').find('tr').eq(-1).html() + '</tr>';
+                $(this).siblings('table').append(tr);
+            });
+            /*删除*/
+            $('.del_data').click(function () {
+            /*删除左后一个*/
+                /*$(this).siblings('table').find('tr').eq(-1).remove()*/
+            /*删除选中的单选框*/
+                /*$(':checked').parent().parent().remove();*/
+            /* 删除选中的留下最后一行*/
+                const check = $(':checked');
+                const table = $(this).siblings('table');
+                if(table.find('tr').length>2){
+                    if (check.length>0){
+                        console.log(check.length)
+                        check.parent().parent().remove()}
+                    else{
+                            table.find('tr').eq(-1).remove()
+                        }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="menu">
+        <ul>
+            <li class="cur">请求头</li>
+            <li >请求数据</li>
+            <li >响应数据</li>
+        </ul>
+
+    </div>
+    <div class="content">
+        <div class="active">
+            <input type="button" class="add_data" value="添加header">
+            <input type="button" class="del_data" value="删除header">
+            <table>
+                <tr>
+                    <th>选择</th>
+                    <th>header</th>
+                    <th>value</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+            <input type="button" class="add_data" value="添加header">
+            <input type="button" class="del_data" value="删除header">
+            <table>
+                <tr>
+                    <th>选择</th>
+                    <th>header</th>
+                    <th>value</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+
+            </table>
+        </div>
+        <div >
+            <input type="button" class="add_data" value="添加header">
+            <input type="button" class="del_data" value="删除header">
+            <table>
+                <tr>
+                    <th>选择</th>
+                    <th>header</th>
+                    <th>value</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

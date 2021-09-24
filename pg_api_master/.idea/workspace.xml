@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fde822d5-386f-43a2-8680-3b35d2f5e21b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/pg_api_master$http_request.coverage" NAME="http_request Coverage Results" MODIFIED="1576215663694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_for_test_shouye_TestCase_test_case.coverage" NAME="Unittests for test_shouye.TestCase.test_case Coverage Results" MODIFIED="1576056554527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1576149190698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test_master$py_test_in_test_login_py.coverage" NAME="py.test in test_login.py Coverage Results" MODIFIED="1566959849781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1" />
+    <SUITE FILE_PATH="coverage/Http_test_master$py_test_for_test_d1valuedataoffice_TestBid_test_car.coverage" NAME="py.test for test_d1valuedataoffice.TestBid.test_car Coverage Results" MODIFIED="1567304114109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_for_test_token_TestCase.coverage" NAME="Unittests for test_token.TestCase Coverage Results" MODIFIED="1576076760995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_in_test_token_py.coverage" NAME="Unittests in test_token.py Coverage Results" MODIFIED="1576718735577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_for_test_login_TestCase_test_case.coverage" NAME="Unittests for test_login.TestCase.test_case Coverage Results" MODIFIED="1576074845479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test_master$py_test_for_test_d1valuedataoffice_TestBid_test_1.coverage" NAME="py.test for test_d1valuedataoffice.TestBid.test_1 Coverage Results" MODIFIED="1571905219028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_for_test_create_project_TestCase.coverage" NAME="Unittests for test_create_project.TestCase Coverage Results" MODIFIED="1575342729014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test_master$py_test_for_test_login_TestLogin_test_login_2_success.coverage" NAME="py.test for test_login.TestLogin.test_login_2_success Coverage Results" MODIFIED="1566984519798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1" />
+    <SUITE FILE_PATH="coverage/Http_test_master$do_excel1.coverage" NAME="do_excel1 Coverage Results" MODIFIED="1567578163935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1/common" />
+    <SUITE FILE_PATH="coverage/Http_test_master$Unittests_in_test_rigester_py.coverage" NAME="Unittests in test_rigester.py Coverage Results" MODIFIED="1566871371201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$test_shouye.coverage" NAME="test_shouye Coverage Results" MODIFIED="1577151394397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$get_token.coverage" NAME="get_token Coverage Results" MODIFIED="1576765959438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test_master$Unittests_for_test_login_TestCase_test_case.coverage" NAME="Unittests for test_login.TestCase.test_case Coverage Results" MODIFIED="1566870418839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test_master$excel.coverage" NAME="excel Coverage Results" MODIFIED="1567327113199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Python1/Lib/site-packages/openpyxl/reader" />
+    <SUITE FILE_PATH="coverage/Http_test_master$py_test_in_test_d1valuedataoffice_py.coverage" NAME="py.test in test_d1valuedataoffice.py Coverage Results" MODIFIED="1567334978810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_in_get_token_py.coverage" NAME="Unittests in test_token.py Coverage Results" MODIFIED="1576077155246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test_master$py_test_for_test_d1valuedataoffice_TestBid.coverage" NAME="py.test for test_d1valuedataoffice.TestBid Coverage Results" MODIFIED="1571905563919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1" />
+    <SUITE FILE_PATH="coverage/Http_test_master$py_test_for_test_login_TestLogin.coverage" NAME="py.test for test_login.TestLogin Coverage Results" MODIFIED="1567043517500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1" />
+    <SUITE FILE_PATH="coverage/Http_test_master$py_test_for_test_d1valuedataoffice_TestBid_test.coverage" NAME="py.test for test_d1valuedataoffice.TestBid.test Coverage Results" MODIFIED="1571905283194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1" />
+    <SUITE FILE_PATH="coverage/Http_test_master$Unittests_for_learn_ddt_TestMsg.coverage" NAME="Unittests for learn_ddt.TestMsg Coverage Results" MODIFIED="1566871566389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_unittest/uitest/l_ddt" />
+    <SUITE FILE_PATH="coverage/pg_api_master$case_suite.coverage" NAME="case_suite Coverage Results" MODIFIED="1576718316837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test_master$do_excel.coverage" NAME="do_excel Coverage Results" MODIFIED="1567327122235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1/common" />
+    <SUITE FILE_PATH="coverage/Http_test_master$test_d1valuedataoffice.coverage" NAME="test_d1valuedataoffice Coverage Results" MODIFIED="1571905428954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/pg3.0.1" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_for_test_token_TestCase_test_case.coverage" NAME="Unittests for test_token.TestCase.test_case Coverage Results" MODIFIED="1576076733593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_in_test_getJurisdiction_py.coverage" NAME="Unittests in test_getJurisdiction.py Coverage Results" MODIFIED="1577152228039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_in_test_shouye_py.coverage" NAME="Unittests in test_shouye.py Coverage Results" MODIFIED="1577152395374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_in_test_create_project_py.coverage" NAME="Unittests in test_create_project.py Coverage Results" MODIFIED="1576072417791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test_master$Unittests_in_test_recharge_py.coverage" NAME="Unittests in test_recharge.py Coverage Results" MODIFIED="1566870639953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_for_get_token_TestCase_test_case.coverage" NAME="Unittests for get_token Coverage Results" MODIFIED="1576076289151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1576718381094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$testingedu_auth.coverage" NAME="testingedu_auth Coverage Results" MODIFIED="1577152010232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_in_test_verificationProjectName_py.coverage" NAME="Unittests in test_verificationProjectName.py Coverage Results" MODIFIED="1577152842133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pg_api_master$Unittests_in_test_addproject_py.coverage" NAME="Unittests in test_addproject.py Coverage Results" MODIFIED="1577152667920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test</find>
+      <find>addproject</find>
+      <find>getJurisdictioncase</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectId" id="1P4ip1jEmYUgmIcSKmMBdhI9kS4" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8Inspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Test-platform" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\test\pg_api_master\test_case" />
+      <recent name="H:\Http_test\learn_python\learn_unittest\uitest\l_nuittest" />
+      <recent name="H:\Http_test\my_homework\tase_case" />
+      <recent name="H:\Http_test\api_last_homework\commom\basic_class" />
+      <recent name="H:\Http_test\my_homework\test_common" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\pg_api_master\test_case" />
+      <recent name="D:\pg3.0.1" />
+      <recent name="D:\pg3.0.1\common" />
+      <recent name="H:\Http_test\test_common" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in test_verificationProjectName.py">
+    <configuration name="test_shouye" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pg_api_master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python1\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/test_shouye.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testingedu_auth" type="PythonConfigurationType" factoryName="Python">
+      <module name="pg_api_master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python1\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_common" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_common/testingedu_auth.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in D:/test/pg_api_master/test_case/test_add_loan.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="pg_api_master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\Python1\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_add_loan.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_addproject.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="pg_api_master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\Python1\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_addproject.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_getJurisdiction.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="pg_api_master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_getJurisdiction.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_shouye.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="pg_api_master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\Python1\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_shouye.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_verificationProjectName.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="pg_api_master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_verificationProjectName.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.testingedu_auth" />
+      <item itemvalue="Python.test_shouye" />
+      <item itemvalue="Python tests.Unittests in D:/test/pg_api_master/test_case/test_add_loan.py" />
+      <item itemvalue="Python tests.Unittests in test_shouye.py" />
+      <item itemvalue="Python tests.Unittests in test_addproject.py" />
+      <item itemvalue="Python tests.Unittests in test_getJurisdiction.py" />
+      <item itemvalue="Python tests.Unittests in test_verificationProjectName.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in test_verificationProjectName.py" />
+        <item itemvalue="Python tests.Unittests in test_addproject.py" />
+        <item itemvalue="Python tests.Unittests in test_shouye.py" />
+        <item itemvalue="Python tests.Unittests in test_getJurisdiction.py" />
+        <item itemvalue="Python.test_shouye" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fde822d5-386f-43a2-8680-3b35d2f5e21b" name="Default Changelist" comment="" />
+      <created>1556604137031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556604137031</updated>
+      <workItem from="1557415196669" duration="959000" />
+      <workItem from="1557735571649" duration="1532000" />
+      <workItem from="1557840451099" duration="2933000" />
+      <workItem from="1557882339536" duration="4385000" />
+      <workItem from="1557902162463" duration="6339000" />
+      <workItem from="1557961046266" duration="1178000" />
+      <workItem from="1557971278746" duration="3308000" />
+      <workItem from="1558056235563" duration="15456000" />
+      <workItem from="1558314181627" duration="10800000" />
+      <workItem from="1558356752362" duration="321000" />
+      <workItem from="1558405536735" duration="1808000" />
+      <workItem from="1558419468772" duration="8790000" />
+      <workItem from="1558487947105" duration="8959000" />
+      <workItem from="1558505504999" duration="8255000" />
+      <workItem from="1558527070891" duration="4333000" />
+      <workItem from="1558531901998" duration="474000" />
+      <workItem from="1558586130451" duration="274000" />
+      <workItem from="1558588670888" duration="10306000" />
+      <workItem from="1558617991850" duration="1371000" />
+      <workItem from="1558659888123" duration="13185000" />
+      <workItem from="1558684411434" duration="5800000" />
+      <workItem from="1558698843973" duration="5457000" />
+      <workItem from="1558917301758" duration="13862000" />
+      <workItem from="1559020772746" duration="4369000" />
+      <workItem from="1559049604860" duration="7114000" />
+      <workItem from="1559092856497" duration="598000" />
+      <workItem from="1559100834390" duration="13653000" />
+      <workItem from="1559526628095" duration="1902000" />
+      <workItem from="1559612525063" duration="2334000" />
+      <workItem from="1559701781655" duration="1746000" />
+      <workItem from="1559803056669" duration="3323000" />
+      <workItem from="1559807549574" duration="1440000" />
+      <workItem from="1559811461464" duration="545000" />
+      <workItem from="1560132566737" duration="8627000" />
+      <workItem from="1560222362608" duration="7293000" />
+      <workItem from="1560238751333" duration="1755000" />
+      <workItem from="1560299811660" duration="18091000" />
+      <workItem from="1560344487679" duration="8060000" />
+      <workItem from="1560354218346" duration="162000" />
+      <workItem from="1560354536318" duration="19000" />
+    </task>
+    <task id="LOCAL-00001" summary="引入日志">
+      <created>1558420025055</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558420025055</updated>
+    </task>
+    <task id="LOCAL-00002" summary="引入日志">
+      <created>1558428140137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558428140137</updated>
+    </task>
+    <task id="LOCAL-00003" summary="引入日志">
+      <created>1558502917288</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558502917288</updated>
+    </task>
+    <task id="LOCAL-00004" summary="手机号码自动叠加">
+      <created>1558505552258</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558505552258</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cook增加，登陆后充值">
+      <created>1558516812954</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558516812954</updated>
+    </task>
+    <task id="LOCAL-00006" summary="cook增加，登陆后充值">
+      <created>1558532064647</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558532064648</updated>
+    </task>
+    <task id="LOCAL-00007" summary="cook增加，登陆后充值">
+      <created>1558598168797</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558598168797</updated>
+    </task>
+    <task id="LOCAL-00008" summary="cook增加，登陆后充值">
+      <created>1558667015202</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558667015202</updated>
+    </task>
+    <task id="LOCAL-00009" summary="数据库学习">
+      <created>1558689671689</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1558689671690</updated>
+    </task>
+    <task id="LOCAL-00010" summary="pymysql">
+      <created>1558917447512</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558917447512</updated>
+    </task>
+    <task id="LOCAL-00011" summary="pymysql">
+      <created>1558949692738</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1558949692739</updated>
+    </task>
+    <task id="LOCAL-00012" summary="pymysql">
+      <created>1558949722253</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1558949722253</updated>
+    </task>
+    <task id="LOCAL-00013" summary="pymysql">
+      <created>1559526660965</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1559526660965</updated>
+    </task>
+    <task id="LOCAL-00014" summary="pymysql">
+      <created>1560145362679</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560145362679</updated>
+    </task>
+    <task id="LOCAL-00015" summary="增加jenkins路径">
+      <created>1560156648173</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1560156648174</updated>
+    </task>
+    <task id="LOCAL-00016" summary="项目需要的模块">
+      <created>1560156755002</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560156755002</updated>
+    </task>
+    <task id="LOCAL-00017" summary="mock学习">
+      <created>1560223638779</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1560223638780</updated>
+    </task>
+    <task id="LOCAL-00018" summary="实战作业">
+      <created>1560240718899</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1560240718899</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_test_addproject_py - 2019.12.24 at 09h 55m 59s.xml">
+      <configuration name="Unittests in test_addproject.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_addproject_py - 2019.12.24 at 09h 56m 19s.xml">
+      <configuration name="Unittests in test_addproject.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_addproject_py - 2019.12.24 at 09h 56m 44s.xml">
+      <configuration name="Unittests in test_addproject.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_addproject_py - 2019.12.24 at 09h 57m 57s.xml">
+      <configuration name="Unittests in test_addproject.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_getJurisdiction_py - 2019.12.24 at 09h 49m 37s.xml">
+      <configuration name="Unittests in test_getJurisdiction.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_getJurisdiction_py - 2019.12.24 at 09h 50m 13s.xml">
+      <configuration name="Unittests in test_getJurisdiction.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_getJurisdiction_py - 2019.12.24 at 09h 50m 33s.xml">
+      <configuration name="Unittests in test_getJurisdiction.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_shouye_py - 2019.12.24 at 09h 52m 59s.xml">
+      <configuration name="Unittests in test_shouye.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_shouye_py - 2019.12.24 at 09h 53m 25s.xml">
+      <configuration name="Unittests in test_shouye.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_verificationProjectName_py - 2019.12.24 at 10h 00m 48s.xml">
+      <configuration name="Unittests in test_verificationProjectName.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="211116000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="引入日志" />
+    <MESSAGE value="手机号码自动叠加" />
+    <MESSAGE value="cook增加，登陆后充值" />
+    <MESSAGE value="数据库学习" />
+    <MESSAGE value="pymysql" />
+    <MESSAGE value="增加jenkins路径" />
+    <MESSAGE value="项目需要的模块" />
+    <MESSAGE value="mock学习" />
+    <MESSAGE value="实战作业" />
+    <option name="LAST_COMMIT_MESSAGE" value="实战作业" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://D:/pg3.0.1/pages/bid.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_case/test_create_project.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_case/test_create_project.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_case/test_create_project.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_common/testingedu_auth.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_common/testingedu_auth.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_common/testingedu_auth.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="sheet.max_row" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_unittest_TestSub_test_003.coverage" NAME="Unittests for learn_unittest.TestSub.test_003 Coverage Results" MODIFIED="1557735903610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_test_recharge_TestCase.coverage" NAME="Unittests for test_recharge.TestCase Coverage Results" MODIFIED="1558529282302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_mock_PaymenTest_test_pay_success.coverage" NAME="Unittests for learn_mock.PaymenTest.test_pay_success Coverage Results" MODIFIED="1560225046216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_mock" />
+    <SUITE FILE_PATH="coverage/Http_test$my_log__1_.coverage" NAME="my_log (1) Coverage Results" MODIFIED="1558420788579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$ddt_suite__1_.coverage" NAME="ddt_suite (1) Coverage Results" MODIFIED="1558060942209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest/l_ddt" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_unittest_TestAdd_test_002.coverage" NAME="Unittests for learn_unittest.TestAdd.test_002 Coverage Results" MODIFIED="1557844833325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$web_request.coverage" NAME="web_request Coverage Results" MODIFIED="1560350469679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_homework/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_ddt_TestPringMsg_test_001.coverage" NAME="Unittests for learn_ddt.TestPringMsg.test_001 Coverage Results" MODIFIED="1557962080178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_mock_PaymenTest_test_pay_fail.coverage" NAME="Unittests for learn_mock.PaymenTest.test_pay_fail Coverage Results" MODIFIED="1560232683634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_mock" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_test_recharge_TestCase_test_case.coverage" NAME="Unittests for test_recharge.TestCase.test_case Coverage Results" MODIFIED="1559806266852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_learn_mock_py.coverage" NAME="Unittests in learn_mock.py Coverage Results" MODIFIED="1560224899190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_mock" />
+    <SUITE FILE_PATH="coverage/Http_test$learn_conf.coverage" NAME="learn_conf Coverage Results" MODIFIED="1560133347334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_config" />
+    <SUITE FILE_PATH="coverage/Http_test$case_suite.coverage" NAME="case_suite Coverage Results" MODIFIED="1560145270200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$do_excel.coverage" NAME="do_excel Coverage Results" MODIFIED="1560349660546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_homework/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1560352637237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_test_add_loan_py.coverage" NAME="Unittests in test_add_loan.py Coverage Results" MODIFIED="1559112198940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$test_register.coverage" NAME="test_register Coverage Results" MODIFIED="1558528846215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_test_Invest_py.coverage" NAME="Unittests in test_Invest.py Coverage Results" MODIFIED="1559803795158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_ddt_TestMsg_test_001.coverage" NAME="Unittests for learn_ddt.TestMsg.test_001 Coverage Results" MODIFIED="1558058788944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_learn_unittest_py.coverage" NAME="Unittests in learn_unittest.py Coverage Results" MODIFIED="1560353843076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_unittest/uitest/l_nuittest" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_learn_ddt_py.coverage" NAME="Unittests in learn_ddt.py Coverage Results" MODIFIED="1558057751183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_test_add_loan_TestCase_test_case.coverage" NAME="Unittests for test_add_loan.TestCase.test_case Coverage Results" MODIFIED="1558680794494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_test_recharge_py.coverage" NAME="Unittests in test_recharge.py Coverage Results" MODIFIED="1560145319018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_unittest_TestAdd_test_001.coverage" NAME="Unittests for learn_unittest.TestAdd.test_001 Coverage Results" MODIFIED="1558058821912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1560330975879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Http_test$learn_logging.coverage" NAME="learn_logging Coverage Results" MODIFIED="1560144942039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_logging" />
+    <SUITE FILE_PATH="coverage/Http_test$learn_re.coverage" NAME="learn_re Coverage Results" MODIFIED="1560137771019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_re" />
+    <SUITE FILE_PATH="coverage/Http_test$run.coverage" NAME="run Coverage Results" MODIFIED="1558072932486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_test_case_TestCase_test_case.coverage" NAME="Unittests for test_case.TestCase.test_case Coverage Results" MODIFIED="1558422637259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_mock_PaymenTest_test_pay_retry_success.coverage" NAME="Unittests for learn_mock.PaymenTest.test_pay_retry_success Coverage Results" MODIFIED="1560231518002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_mock" />
+    <SUITE FILE_PATH="coverage/Http_test$DO_EXCEL.coverage" NAME="DO_EXCEL Coverage Results" MODIFIED="1560344735470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_homework/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$http_request.coverage" NAME="http_request Coverage Results" MODIFIED="1559807940243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$test_login.coverage" NAME="test_login Coverage Results" MODIFIED="1558531681775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_mock_PaymenTest_test_pay_retry_fail.coverage" NAME="Unittests for learn_mock.PaymenTest.test_pay_retry_fail Coverage Results" MODIFIED="1560230767020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_mock" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_unittest_TestAdd.coverage" NAME="Unittests for learn_unittest.TestAdd Coverage Results" MODIFIED="1560353884031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python/learn_unittest/uitest/l_nuittest" />
+    <SUITE FILE_PATH="coverage/Http_test$read_config.coverage" NAME="read_config Coverage Results" MODIFIED="1558488662237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1560308799083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/homework" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_ddt_TestPringMsg.coverage" NAME="Unittests for learn_ddt.TestPringMsg Coverage Results" MODIFIED="1557912150882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$my_log.coverage" NAME="my_log Coverage Results" MODIFIED="1558342828865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_logging" />
+    <SUITE FILE_PATH="coverage/Http_test$learn_suite.coverage" NAME="learn_suite Coverage Results" MODIFIED="1557910650506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_learn_ddt_TestMsg.coverage" NAME="Unittests for learn_ddt.TestMsg Coverage Results" MODIFIED="1558059029665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_for_test_rigester_TestCase_test_case.coverage" NAME="Unittests for test_rigester.TestCase.test_case Coverage Results" MODIFIED="1558934496551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/Http_test$do_mysql.coverage" NAME="do_mysql Coverage Results" MODIFIED="1558928849599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$test_sendmcode.coverage" NAME="test_sendmcode Coverage Results" MODIFIED="1560354274435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_homework/tase_case" />
+    <SUITE FILE_PATH="coverage/Http_test$test.coverage" NAME="test Coverage Results" MODIFIED="1560317264171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Http_test$lean_mysql.coverage" NAME="lean_mysql Coverage Results" MODIFIED="1558926098089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_mysql" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_test_case_py.coverage" NAME="Unittests in test_case.py Coverage Results" MODIFIED="1558426737525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1560137714113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_test_register_py.coverage" NAME="Unittests in test_register.py Coverage Results" MODIFIED="1558529110034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$ddt_suite.coverage" NAME="ddt_suite Coverage Results" MODIFIED="1558060598416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unit_test/uitest" />
+    <SUITE FILE_PATH="coverage/Http_test$project_path.coverage" NAME="project_path Coverage Results" MODIFIED="1560347908902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_homework/test_common" />
+    <SUITE FILE_PATH="coverage/Http_test$Unittests_in_test_rigester_py.coverage" NAME="Unittests in test_rigester.py Coverage Results" MODIFIED="1558934511096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

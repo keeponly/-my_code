@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="3" name="pytest" skipped="0" tests="3" time="31.228"><testcase classname="test_login.TestLogin" file="test_login.py" line="88" name="test_login_1_error[data0]" time="6.998"><failure message="AttributeError: &apos;TestLogin&apos; object has no attribute &apos;assertTrue&apos;">self = &lt;test_login.TestLogin object at 0x03AF47D0&gt;
+data = {&apos;expected&apos;: &apos;请输入手机号&apos;, &apos;pwd&apos;: &apos;&apos;, &apos;username&apos;: &apos;&apos;}
+init_web = (&lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;6ecf56fbd69f223275fd988d0564e62b&quot;)&gt;, &lt;pages.login.LoginPage object at 0x03B19BB0&gt;)
+
+    @pytest.mark.demo
+    # @pytest.mark.skip(reason=&quot;test&quot;)
+    # @ddt.data(*user_info_error) # (a, b, c)
+    @pytest.mark.parametrize(&apos;data&apos;, user_info_error)
+    def test_login_1_error(self, data, init_web):
+        &quot;&quot;&quot;请输入手机号&quot;&quot;&quot;
+        # 登录
+        # self.driver = Chrome()
+        # self.login_page = LoginPage(self.driver)
+    
+        self.driver, self.login_page = init_web # 元组
+    
+        # self.login_page.login(&apos;18684720553&apos;, &apos;python&apos;)
+        self.login_page.login(data[&apos;username&apos;], data[&apos;pwd&apos;])
+        # 定位出错的信息的元素 get_flash_info()
+    
+        # 清空用户数据clear_user_info() 侵犯攻击性
+    
+        flash_ele = self.login_page.get_flash_info()
+        # 断言
+&gt;       self.assertTrue(data[&apos;expected&apos;] == flash_ele.text)
+E       AttributeError: &apos;TestLogin&apos; object has no attribute &apos;assertTrue&apos;
+
+test_login.py:109: AttributeError</failure></testcase><testcase classname="test_login.TestLogin" file="test_login.py" line="88" name="test_login_1_error[data1]" time="16.804"><failure message="AttributeError: &apos;TestLogin&apos; object has no attribute &apos;assertTrue&apos;">self = &lt;test_login.TestLogin object at 0x03DB3830&gt;
+data = {&apos;expected&apos;: &apos;请输入正确的手机号&apos;, &apos;pwd&apos;: &apos;&apos;, &apos;username&apos;: &apos;12&apos;}
+init_web = (&lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;8f08ddb893b44d100b8f0f3ef0f7ac74&quot;)&gt;, &lt;pages.login.LoginPage object at 0x03DB3890&gt;)
+
+    @pytest.mark.demo
+    # @pytest.mark.skip(reason=&quot;test&quot;)
+    # @ddt.data(*user_info_error) # (a, b, c)
+    @pytest.mark.parametrize(&apos;data&apos;, user_info_error)
+    def test_login_1_error(self, data, init_web):
+        &quot;&quot;&quot;请输入手机号&quot;&quot;&quot;
+        # 登录
+        # self.driver = Chrome()
+        # self.login_page = LoginPage(self.driver)
+    
+        self.driver, self.login_page = init_web # 元组
+    
+        # self.login_page.login(&apos;18684720553&apos;, &apos;python&apos;)
+        self.login_page.login(data[&apos;username&apos;], data[&apos;pwd&apos;])
+        # 定位出错的信息的元素 get_flash_info()
+    
+        # 清空用户数据clear_user_info() 侵犯攻击性
+    
+        flash_ele = self.login_page.get_flash_info()
+        # 断言
+&gt;       self.assertTrue(data[&apos;expected&apos;] == flash_ele.text)
+E       AttributeError: &apos;TestLogin&apos; object has no attribute &apos;assertTrue&apos;
+
+test_login.py:109: AttributeError</failure></testcase><testcase classname="test_login.TestLogin" file="test_login.py" line="88" name="test_login_1_error[data2]" time="7.069"><failure message="AttributeError: &apos;TestLogin&apos; object has no attribute &apos;assertTrue&apos;">self = &lt;test_login.TestLogin object at 0x03DD5170&gt;
+data = {&apos;expected&apos;: &apos;请输入密码&apos;, &apos;pwd&apos;: &apos;&apos;, &apos;username&apos;: &apos;18654321456&apos;}
+init_web = (&lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;8e52aba00d3f216dbb736fd56e009846&quot;)&gt;, &lt;pages.login.LoginPage object at 0x03DD5470&gt;)
+
+    @pytest.mark.demo
+    # @pytest.mark.skip(reason=&quot;test&quot;)
+    # @ddt.data(*user_info_error) # (a, b, c)
+    @pytest.mark.parametrize(&apos;data&apos;, user_info_error)
+    def test_login_1_error(self, data, init_web):
+        &quot;&quot;&quot;请输入手机号&quot;&quot;&quot;
+        # 登录
+        # self.driver = Chrome()
+        # self.login_page = LoginPage(self.driver)
+    
+        self.driver, self.login_page = init_web # 元组
+    
+        # self.login_page.login(&apos;18684720553&apos;, &apos;python&apos;)
+        self.login_page.login(data[&apos;username&apos;], data[&apos;pwd&apos;])
+        # 定位出错的信息的元素 get_flash_info()
+    
+        # 清空用户数据clear_user_info() 侵犯攻击性
+    
+        flash_ele = self.login_page.get_flash_info()
+        # 断言
+&gt;       self.assertTrue(data[&apos;expected&apos;] == flash_ele.text)
+E       AttributeError: &apos;TestLogin&apos; object has no attribute &apos;assertTrue&apos;
+
+test_login.py:109: AttributeError</failure></testcase></testsuite>

@@ -1,0 +1,185 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" >
+
+        <title>html练习2</title>
+
+    </head>
+
+    <body background="http://img18.3lian.com/d/file/201711/11/aff81832b1472c2a44f2c703a4c0236c.png">
+
+
+
+    <!--服务器接口-->
+
+    <form action="http://127.0.0.1:5000/login" method="get">
+
+
+
+        <div>
+
+            <p>
+
+                <a href="http://baidu.com" style="color:blue" target="_blank"><font size="5" >百度</font></a>
+
+                <a href="http://www.runoob.com/html/html-tutorial.html" style="color:blue" target="_blank"><font size="5">HTML教程</font></a>
+
+                <a href="https://www.ketangpai.com/User/login.html" style="color:blue" target="_blank"><font size="5">课堂派</font></a>
+
+            </p>
+
+        </div>
+
+ <br>
+
+        <div>用户名:
+
+            <input id="user" type="text" name="user" >
+
+        </div>
+
+ <br>
+
+        <div>密码：
+
+            <input id="pwd" type="password" name="password">
+
+        </div>
+
+
+
+ <br>
+
+        <div>性别：
+
+            <input type="radio" name="radio" value="boy">男
+
+            <input type="radio" name="radio" value="gril">女
+
+        </div>
+
+        <br>
+
+        <div>电话号码:
+
+            <input type="number" name="number" minlength="11">
+
+        </div>
+
+ <br>
+
+        <div>头像:
+
+            <input type="file" name="file">
+
+        </div>
+
+ <br>
+
+        <div>住址：
+
+            <select>
+
+                <option>广东</option>
+
+            </select>
+
+            省
+
+            <select>
+
+                <option>东莞</option>
+
+                <option>深圳</option>
+
+                <option>广州</option>
+
+            </select>
+
+            市
+
+        </div>
+
+
+
+        <br>
+
+        <div>爱好:
+
+            <input type="checkbox" name="Favor" value="Basketball">篮球
+
+            <input type="checkbox" name="Favor" value="look book">看书
+
+            <input type="checkbox" name="Favor" value="watching">追剧
+
+        </div>
+
+        <br>
+
+        <div>备注信息:
+
+            <textarea></textarea>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <input type="reset" >
+
+            <input type="submit" value="登录" onclick="alertme()">
+
+        </div>
+
+        <br>
+
+
+
+    </form>
+
+
+
+    <script>
+
+        function alertme(){
+
+            var user = document.getElementById('user').value;
+
+            var pwd = document.getElementById('pwd').value;
+
+            window.alert('用户名:'+user +'    '+ '密码:'+ pwd );
+
+
+
+        }
+
+
+
+        function red(a){
+
+            a.style.color = 'red';
+
+        }
+
+
+
+        function green(a){
+
+            a.style.color = 'green';
+
+        }
+
+    </script>
+
+
+
+    </body>
+
+</html>

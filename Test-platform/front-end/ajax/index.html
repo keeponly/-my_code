@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <p onclick="send_ajax()" >点击发送</p>
+    <script>
+        function send_ajax() {
+        $.ajax({
+        url:'http://127.0.0.1:5000',
+        data:JSON.stringify({username:"china"}),
+        dataType:'json',
+        type:'POST',
+        contentType:'application/json',
+        success: function(data){
+        alert('成功')}
+        })
+        }
+    </script>
+
+</body>
+</html>

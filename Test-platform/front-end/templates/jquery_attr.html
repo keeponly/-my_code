@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性和元素操作</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--attr写入属性 remove移除属性-->
+    <script type="text/javascript">
+        $(function () {
+           /* 读取元素属性*/
+            const href = $('.div1 a').eq(0).attr('href');
+            console.log(href);
+            /*写入属性*/
+            $('a').attr('href',href);
+            /*输出文本*/
+            console.log($('.div1').text());
+            console.log($('.div1').html());
+            $('#btn').click(function () {
+                const user = $('#user').val();
+                const pwd = $('#pwd').val();
+                if(user.length<6) {
+                    alert("你输入的账号小于6位数");
+                }else{
+                    alert(user)
+                    }
+            });
+            /*在元素内部后面加入内容*/
+            $('.div2').append("<p>hello</p>");
+            /*在元素内部前面加入内容*/
+            $('.div2').prepend("<p>hello</p>");
+            // 元素前插入内容
+            $('.div2').before("<p>hello</p>");
+            /*删除元素*/
+           /* 删除选中节点以及子节点*/
+            $('ul').remove();
+            $('ul').empty();
+         /*   删除节点的子节点*/
+
+        })
+    </script>
+</head>
+<body>
+
+    <div class="div1">
+        <span> 你好python</span>
+        <ul>
+            <li><a href="http://www.lemonban.com">柠檬班</a></li>
+            <li><a href=""> 柠檬班01</a> </li>
+            <li><a href=""> 柠檬班02</a> </li>
+            <li><a href=""> 柠檬班03</a> </li>
+        </ul>
+
+    </div>
+    <div class="div2">
+        <form action="">
+            账号：<input type="text" id="user" name="user">
+            <br>
+            密码：<input type="password" id="pwd" name="pwd">
+            <br>
+            <input id="btn" type="button" value="提交">
+        </form>
+
+    </div>
+
+</body>
+</html>

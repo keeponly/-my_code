@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>橘子课堂</title>
+	</head>
+	<body>
+			<script>
+				function alertme(){
+					var username = document.getElementById("username").value;
+					var password = document.getElementById("password").value;
+					alert("用户名："+username  + ",密码："+password);					
+				}
+			</script>
+			<div>
+			<form>
+				用户名：<input id="username" name="username"/><br>
+				密码：<input id="password" name="password" /><br>
+				性别：<input type="radio" name="sex" value="男"/>男
+				<input type="radio" name="sex" value="女"/>女<br />
+				头像：<input type="file" /><br />
+				<div>住址：
+				<select style="width:20% ">
+					<option>广东</option>
+					<option>山西</option>
+				</select><span>省</span>
+				<select style="width:20% ">
+					<option>深圳</option>
+					<option>太原</option>
+				</select><span>市</span><br>
+				</div>
+				<div>爱好：
+				<input type="checkbox" />篮球
+				<input type="checkbox" />足球
+				<input type="checkbox" />看书	
+				</div>
+				备注信息：<textarea></textarea><br />
+				<button type="button" onclick="alertme()"/>提交</button>
+				<input type="reset" />
+			</form>
+			
+		</div>
+		
+	</body>
+</html>

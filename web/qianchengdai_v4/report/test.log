@@ -1,0 +1,108 @@
+E test_login.py::TestLogin::test_login_1_error_1
+ cls = <class '_pytest.runner.CallInfo'>, func = <function call_runtest_hook.<locals>.<lambda> at 0x03C98B28>
+ when = 'setup', reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
+ 
+     @classmethod
+     def from_call(cls, func, when, reraise=None):
+         #: context of invocation: one of "setup", "call",
+         #: "teardown", "memocollect"
+         start = time()
+         excinfo = None
+         try:
+ >           result = func()
+ 
+ c:\python37\lib\site-packages\_pytest\runner.py:226: 
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+ c:\python37\lib\site-packages\_pytest\runner.py:198: in <lambda>
+     lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+ c:\python37\lib\site-packages\pluggy\hooks.py:289: in __call__
+     return self._hookexec(self, self.get_hookimpls(), kwargs)
+ c:\python37\lib\site-packages\pluggy\manager.py:68: in _hookexec
+     return self._inner_hookexec(hook, methods, kwargs)
+ c:\python37\lib\site-packages\pluggy\manager.py:62: in <lambda>
+     firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+ c:\python37\lib\site-packages\_pytest\runner.py:116: in pytest_runtest_setup
+     item.session._setupstate.prepare(item)
+ c:\python37\lib\site-packages\_pytest\runner.py:362: in prepare
+     col.setup()
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+ 
+ self = <TestCaseFunction test_login_1_error_1>
+ 
+     def setup(self):
+ >       self._testcase = self.parent.obj(self.name)
+ E       TypeError: __init__() takes 1 positional argument but 2 were given
+ 
+ c:\python37\lib\site-packages\_pytest\unittest.py:114: TypeError
+E test_login.py::TestLogin::test_login_1_error_2
+ cls = <class '_pytest.runner.CallInfo'>, func = <function call_runtest_hook.<locals>.<lambda> at 0x03DC1660>
+ when = 'setup', reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
+ 
+     @classmethod
+     def from_call(cls, func, when, reraise=None):
+         #: context of invocation: one of "setup", "call",
+         #: "teardown", "memocollect"
+         start = time()
+         excinfo = None
+         try:
+ >           result = func()
+ 
+ c:\python37\lib\site-packages\_pytest\runner.py:226: 
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+ c:\python37\lib\site-packages\_pytest\runner.py:198: in <lambda>
+     lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+ c:\python37\lib\site-packages\pluggy\hooks.py:289: in __call__
+     return self._hookexec(self, self.get_hookimpls(), kwargs)
+ c:\python37\lib\site-packages\pluggy\manager.py:68: in _hookexec
+     return self._inner_hookexec(hook, methods, kwargs)
+ c:\python37\lib\site-packages\pluggy\manager.py:62: in <lambda>
+     firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+ c:\python37\lib\site-packages\_pytest\runner.py:116: in pytest_runtest_setup
+     item.session._setupstate.prepare(item)
+ c:\python37\lib\site-packages\_pytest\runner.py:362: in prepare
+     col.setup()
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+ 
+ self = <TestCaseFunction test_login_1_error_2>
+ 
+     def setup(self):
+ >       self._testcase = self.parent.obj(self.name)
+ E       TypeError: __init__() takes 1 positional argument but 2 were given
+ 
+ c:\python37\lib\site-packages\_pytest\unittest.py:114: TypeError
+E test_login.py::TestLogin::test_login_1_error_3
+ cls = <class '_pytest.runner.CallInfo'>, func = <function call_runtest_hook.<locals>.<lambda> at 0x03ACCF18>
+ when = 'setup', reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
+ 
+     @classmethod
+     def from_call(cls, func, when, reraise=None):
+         #: context of invocation: one of "setup", "call",
+         #: "teardown", "memocollect"
+         start = time()
+         excinfo = None
+         try:
+ >           result = func()
+ 
+ c:\python37\lib\site-packages\_pytest\runner.py:226: 
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+ c:\python37\lib\site-packages\_pytest\runner.py:198: in <lambda>
+     lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+ c:\python37\lib\site-packages\pluggy\hooks.py:289: in __call__
+     return self._hookexec(self, self.get_hookimpls(), kwargs)
+ c:\python37\lib\site-packages\pluggy\manager.py:68: in _hookexec
+     return self._inner_hookexec(hook, methods, kwargs)
+ c:\python37\lib\site-packages\pluggy\manager.py:62: in <lambda>
+     firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+ c:\python37\lib\site-packages\_pytest\runner.py:116: in pytest_runtest_setup
+     item.session._setupstate.prepare(item)
+ c:\python37\lib\site-packages\_pytest\runner.py:362: in prepare
+     col.setup()
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+ 
+ self = <TestCaseFunction test_login_1_error_3>
+ 
+     def setup(self):
+ >       self._testcase = self.parent.obj(self.name)
+ E       TypeError: __init__() takes 1 positional argument but 2 were given
+ 
+ c:\python37\lib\site-packages\_pytest\unittest.py:114: TypeError
