@@ -5,12 +5,12 @@
 # @ File    :test_recharge.py
 # 引入单元测试
 import unittest
-from test_common.http_request import HttpRequests
-from test_common.do_excel import DoExcel
-from test_common import project_path
+from zl_api.test_common.http_request import HttpRequests
+from zl_api.test_common.do_excel import DoExcel
+from zl_api.test_common import project_path
 from ddt import ddt, data, unpack
-from test_common.my_log import Mylog
-from test_common.get_data import GetData
+from zl_api.test_common.my_log import Mylog
+from zl_api.test_common.get_data import GetData
 
 # 测试注册
 test_data = DoExcel(project_path.case_path, 'register').read_excel('RegisterCASE')

@@ -6,14 +6,14 @@
 # 引入单元测试
 import unittest
 import pymysql
-from test_common.http_request import HttpRequests
-from test_common.do_excel import DoExcel
-from test_common import project_path
+from zl_api.test_common.http_request import HttpRequests
+from zl_api.test_common.do_excel import DoExcel
+from zl_api.test_common import project_path
 from ddt import ddt, data
-from test_common.my_log import Mylog
-from test_common.get_data import GetData
-from test_common.do_mysql import DoMysql
-from test_case.test_login import token
+from zl_api.test_common.my_log import Mylog
+from zl_api.test_common.get_data import GetData
+from zl_api.test_common.do_mysql import DoMysql
+from zl_api.test_case.test_login import token
 
 from test_common.get_token import get_token
 

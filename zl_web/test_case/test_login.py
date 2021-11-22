@@ -4,12 +4,12 @@
 # @Email    :1063699580@qq.com
 # @ File    :test_login.py
 import ddt
-from zlweb.mgy.pages.common.zlpg_home import IndexPage
-from zlweb.mgy.pages.page.login import LoginPage
+from zl_web.pages.common.zlpg_home import IndexPage
+from zl_web.pages.page.login import LoginPage
 import time
 import unittest
 from selenium.webdriver import Chrome
-from zlweb.mgy.test_data.project_data import *
+from zl_web.mgy.test_data.project_data import *
 
 
 @ddt.ddt

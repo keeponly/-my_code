@@ -6,10 +6,10 @@
 import time
 import unittest
 from selenium.webdriver import Chrome
-from mgy.pages.page.login import LoginPage
+from zl_web.pages.page.login import LoginPage
 import ddt
-from mgy.pages.page.creat_project import CreatPage
-from mgy.test_data.project_data import *
+from zl_web.pages.page.creat_project import CreatPage
+from zl_web.test_data.project_data import *
 
 
 @ddt.ddt

@@ -8,10 +8,10 @@ import sys
 sys.path.append('./')
 import unittest
 import HTMLTestRunnerNew
-from test_common import project_path
+from zl_api.test_common import project_path
 # from test_case.test_register import TestCase
 #from test_case.test_recharge import TestCase
-from test_case.test_login import TestCase
+from zl_api.test_case.test_login import TestCase
 
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()

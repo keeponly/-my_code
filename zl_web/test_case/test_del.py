@@ -5,9 +5,9 @@
 # @ File    :test_del.py
 import unittest
 from selenium.webdriver import Chrome
-from mgy.pages.common.zlpg_home import IndexPage
-from mgy.pages.page.login import LoginPage
-from mgy.pages.page.dele import DelProject
+from zl_web.pages.common.zlpg_home import IndexPage
+from zl_web.pages.page.login import LoginPage
+from zl_web.pages.page.dele import DelProject
 
 
 class TestCreat(unittest.TestCase):

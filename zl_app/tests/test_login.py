@@ -1,6 +1,6 @@
-from pages.login import LoginPage
-from pages.nav import NavPage
-from pages.user import UserPage
+from zl_app.pages.login import LoginPage
+from zl_app.pages.nav import NavPage
+from zl_app.pages.user import UserPage
 
 
 def test_login_success(init_app_reset):

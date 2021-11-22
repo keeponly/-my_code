@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="375aa4ab-e21e-4e2e-aee1-21f727511b65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zlweb/mgy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlweb/mgy/pages/page/Operation permission.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/mgy/pages/common/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/mgy/pages/common/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/mgy/pages/common/project_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/mgy/pages/page/project_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/mgy/pages/page/dele.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/mgy/pages/page/dele.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/mgy/pages/page/edit_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/mgy/pages/page/edit_project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/mgy/pages/page/first_approval.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/mgy/pages/page/first_approval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/mgy/pages/page/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/mgy/pages/page/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/mgy/test_case/test_edit_pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/mgy/test_case/test_edit_pro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/mgy/test_case/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/mgy/test_case/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlweb/mgy/test_data/project_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlweb/mgy/test_data/project_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/case_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/case_suite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_Invest.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_Invest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_addproject.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_addproject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_create_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_create_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_getGroupAndUserTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_getGroupAndUserTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_getJurisdiction.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_getJurisdiction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_getProjectNavi.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_getProjectNavi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_recharge.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_recharge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_rigester.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_rigester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_shouye.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_shouye.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_api/test_case/test_verificationProjectName.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_api/test_case/test_verificationProjectName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_app/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_app/tests/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_web/test_case/test_creat.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_web/test_case/test_creat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_web/test_case/test_del.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_web/test_case/test_del.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_web/test_case/test_edit_pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_web/test_case/test_edit_pro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zl_web/test_case/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/zl_web/test_case/test_login.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,14 +37,16 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/zlweb" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1tgtfVdUaj13gcAXo5Mg7Nqrdql" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -187,6 +197,11 @@
           <url>file://$PROJECT_DIR$/zlweb/mgy/pages/page/login.py</url>
           <line>20</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zl_api/test_case/test_getGroupAndUserTree.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

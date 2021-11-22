@@ -6,11 +6,11 @@
 import time
 import unittest
 from selenium.webdriver import Chrome
-from zlweb.mgy.pages.common.zlpg_home import IndexPage
-from zlweb.mgy.pages.page.edit_project import EditProject
-from zlweb.mgy.pages.page.login import LoginPage
+from zl_web.pages.common.zlpg_home import IndexPage
+from zl_web.pages.page.edit_project import EditProject
+from zl_web.pages.page.login import LoginPage
 import ddt
-from zlweb.mgy.test_data.project_data import *
+from zl_web.test_data.project_data import *
 
 # 测试项目信息编辑
 # 登录--搜索项目--点击项目
