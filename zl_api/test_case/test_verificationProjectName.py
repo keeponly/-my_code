@@ -15,7 +15,7 @@ from zl_api.test_common.get_data import GetData
 from zl_api.test_common.do_mysql import DoMysql
 from zl_api.test_case.test_login import token
 
-from test_common.get_token import get_token
+from zl_api.test_common.get_token import get_token
 
 test_data = DoExcel(project_path.case_path, 'create_verificationProjectName').read_excel('verificationProjectName')
 My_log = Mylog()
