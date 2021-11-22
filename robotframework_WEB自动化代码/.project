@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>python10_WEB</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.robotframework.ide.eclipse.main.plugin.robotLibrariesBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.robotframework.ide.eclipse.main.plugin.robotNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>libspecs/args_21507b6a.arg</name>
+			<type>1</type>
+			<location>C:/Users/muji/AppData/Local/Temp/RobotTempDir1888928750731371777/args_21507b6a.arg</location>
+		</link>
+		<link>
+			<name>libspecs/args_9ddda213.arg</name>
+			<type>1</type>
+			<location>C:/Users/muji/AppData/Local/Temp/RobotTempDir1888928750731371777/args_9ddda213.arg</location>
+		</link>
+		<link>
+			<name>libspecs/args_a55e5eb0.arg</name>
+			<type>1</type>
+			<location>C:/Users/muji/AppData/Local/Temp/RobotTempDir1888928750731371777/args_a55e5eb0.arg</location>
+		</link>
+	</linkedResources>
+</projectDescription>

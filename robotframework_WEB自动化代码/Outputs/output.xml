@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.4.4 on win32)" generated="20190104 22:41:56.329">
+<suite source="D:\Eclipse_Oxygen_Workspace\python10_WEB" name="python10 WEB" id="s1">
+<suite source="D:\Eclipse_Oxygen_Workspace\python10_WEB\测试用例层" name="测试用例层" id="s1-s1">
+<suite source="D:\Eclipse_Oxygen_Workspace\python10_WEB\测试用例层\登陆功能.robot" name="登陆功能" id="s1-s1-s1">
+<test name="用例4-使用pybot命令当中的变量" id="s1-s1-s1-t1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${testEnv}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190104 22:41:57.339">http://www.baidu.com</msg>
+<status endtime="20190104 22:41:57.341" status="PASS" starttime="20190104 22:41:57.330"></status>
+</kw>
+<tags>
+<tag>demo1</tag>
+<tag>login</tag>
+</tags>
+<status endtime="20190104 22:41:57.344" status="PASS" starttime="20190104 22:41:57.322" critical="yes"></status>
+</test>
+<test name="用例5-铁定要失败的用例" id="s1-s1-s1-t2">
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>10</arg>
+<arg>20</arg>
+</arguments>
+<msg level="FAIL" timestamp="20190104 22:41:57.359">10 != 20</msg>
+<status endtime="20190104 22:41:57.360" status="FAIL" starttime="20190104 22:41:57.357"></status>
+</kw>
+<tags>
+<tag>demo1</tag>
+<tag>login</tag>
+</tags>
+<status endtime="20190104 22:41:57.361" status="FAIL" starttime="20190104 22:41:57.350" critical="yes">10 != 20</status>
+</test>
+<status endtime="20190104 22:41:57.367" status="FAIL" starttime="20190104 22:41:56.636"></status>
+</suite>
+<status endtime="20190104 22:41:57.393" status="FAIL" starttime="20190104 22:41:56.623"></status>
+</suite>
+<status endtime="20190104 22:41:57.402" status="FAIL" starttime="20190104 22:41:56.490"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="1">demo1</stat>
+<stat fail="1" pass="1">login</stat>
+</tag>
+<suite>
+<stat name="python10 WEB" id="s1" fail="1" pass="1">python10 WEB</stat>
+<stat name="测试用例层" id="s1-s1" fail="1" pass="1">python10 WEB.测试用例层</stat>
+<stat name="登陆功能" id="s1-s1-s1" fail="1" pass="1">python10 WEB.测试用例层.登陆功能</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
